@@ -25,6 +25,7 @@ import com.java.xxii.common.HostType;
 import com.java.xxii.mvp.entity.GirlData;
 import com.java.xxii.mvp.entity.NewsDetail;
 import com.java.xxii.mvp.entity.NewsSummary;
+import com.java.xxii.mvp.entity.NewsSummaryRetrieve;
 import com.java.xxii.utils.NetUtil;
 import com.socks.library.KLog;
 
@@ -75,8 +76,9 @@ public class RetrofitManager {
 
     private static SparseArray<RetrofitManager> sRetrofitManager = new SparseArray<>(HostType.TYPE_COUNT);
 
-    public RetrofitManager(@HostType.HostTypeChecker int hostType) {
-        Retrofit retrofit = new Retrofit.Builder().baseUrl(ApiConstants.getHost(hostType))
+    public RetrofitManager(@HostType.HostTypeChecker int hostType) { // set host name by hostType
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl(ApiConstants.getHost(hostType))
                 .client(getOkHttpClient()).addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create()).build();
         mNewsService = retrofit.create(NewsService.class);
@@ -174,9 +176,11 @@ public class RetrofitManager {
      *
      * @param newsType ：headline为头条,house为房产，list为其他
      */
-    public Observable<Map<String, List<NewsSummary>>> getNewsListObservable(
+    public Observable<NewsSummaryRetrieve> getNewsListObservable(
             String newsType, String newsId, int startPage) {
-        return mNewsService.getNewsList(getCacheControl(), newsType, newsId, startPage);
+//        return mNewsService.getNewsList(getCacheControl(), newsType, newsId, startPage);
+        Observable<NewsSummaryRetrieve>  a = mNewsService.getNewsList(getCacheControl(), Integer.valueOf(newsId));
+        return a;
     }
 
     /**

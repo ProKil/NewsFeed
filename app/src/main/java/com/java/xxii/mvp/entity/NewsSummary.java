@@ -16,344 +16,125 @@
  */
 package com.java.xxii.mvp.entity;
 
-import java.util.List;
-
 /**
  * @author 咖枯
  * @version 1.0 2016/5/24
  */
 public class NewsSummary {
-    private String postid;
-    private boolean hasCover;
-    private int hasHead;
-    private int replyCount;
-    private int hasImg;
-    private String digest;
-    private boolean hasIcon;
-    private String docid;
-    private String title;
-    private String ltitle;
-    private int order;
-    private int priority;
-    private String lmodify;
-    private String boardid;
-    private String photosetID;
-    private String template;
-    private int votecount;
-    private String skipID;
-    private String alias;
-    private String skipType;
-    private String cid;
-    private int hasAD;
-    private String source;
-    private String ename;
-    private String imgsrc;
-    private String tname;
-    private String ptime;
+
     /**
-     * title : "悬崖村" 孩子上学需爬800米悬崖
-     * tag : photoset
-     * imgsrc : http://img1.cache.netease.com/3g/2016/5/24/2016052421435478ea5.jpg
-     * subtitle :
-     * url : 00AP0001|119327
+     * lang_Type : zh-CN
+     * newsClassTag : 科技
+     * news_Author : 人民网
+     * news_ID : 2016091304130fa2b951a9994d4ab5e4b938a0eef205
+     * news_Pictures : http://upload.qianlong.com/2016/0912/1473661206139.jpg http://upload.qianlong.com/2016/0912/1473665750616.jpg
+     * news_Source : 其他
+     * news_Time : 20160912000000
+     * news_Title : 《口袋妖怪GO》重拳出击打击作弊 不再支持越狱设备
+     * news_URL : http://tech.qianlong.com/2016/0912/924162.shtml
+     * news_Video :
+     * news_Intro : 9月12日消息，据外媒报道，作为《口袋妖怪GO》开发商之一的Niantic游...
      */
 
-    private List<AdsBean> ads;
-    /**
-     * imgsrc : http://img3.cache.netease.com/3g/2016/5/24/2016052416484243560.jpg
-     */
+    private String lang_Type;
+    private String newsClassTag;
+    private String news_Author;
+    private String news_ID;
+    private String news_Pictures;
+    private String news_Source;
+    private String news_Time;
+    private String news_Title;
+    private String news_URL;
+    private String news_Video;
+    private String news_Intro;
 
-    private List<ImgextraBean> imgextra;
-
-    public String getPostid() {
-        return postid;
+    public String getLang_Type() {
+        return lang_Type;
     }
 
-    public void setPostid(String postid) {
-        this.postid = postid;
+    public void setLang_Type(String lang_Type) {
+        this.lang_Type = lang_Type;
     }
 
-    public boolean isHasCover() {
-        return hasCover;
+    public String getNewsClassTag() {
+        return newsClassTag;
     }
 
-    public void setHasCover(boolean hasCover) {
-        this.hasCover = hasCover;
+    public void setNewsClassTag(String newsClassTag) {
+        this.newsClassTag = newsClassTag;
     }
 
-    public int getHasHead() {
-        return hasHead;
+    public String getNews_Author() {
+        return news_Author;
     }
 
-    public void setHasHead(int hasHead) {
-        this.hasHead = hasHead;
+    public void setNews_Author(String news_Author) {
+        this.news_Author = news_Author;
     }
 
-    public int getReplyCount() {
-        return replyCount;
+    public String getNews_ID() {
+        return news_ID;
     }
 
-    public void setReplyCount(int replyCount) {
-        this.replyCount = replyCount;
+    public void setNews_ID(String news_ID) {
+        this.news_ID = news_ID;
     }
 
-    public int getHasImg() {
-        return hasImg;
+    public String getNews_Pictures() {
+        return "http://upload.qianlong.com/2016/0912/1473661206139.jpg";
+//        return news_Pictures;
+//        TODO: ...
     }
 
-    public void setHasImg(int hasImg) {
-        this.hasImg = hasImg;
+    public void setNews_Pictures(String news_Pictures) {
+        this.news_Pictures = news_Pictures;
     }
 
-    public String getDigest() {
-        return digest;
+    public String getNews_Source() {
+        return news_Source;
     }
 
-    public void setDigest(String digest) {
-        this.digest = digest;
+    public void setNews_Source(String news_Source) {
+        this.news_Source = news_Source;
     }
 
-    public boolean isHasIcon() {
-        return hasIcon;
+    public String getNews_Time() {
+        return news_Time;
     }
 
-    public void setHasIcon(boolean hasIcon) {
-        this.hasIcon = hasIcon;
+    public void setNews_Time(String news_Time) {
+        this.news_Time = news_Time;
     }
 
-    public String getDocid() {
-        return docid;
+    public String getNews_Title() {
+        return news_Title;
     }
 
-    public void setDocid(String docid) {
-        this.docid = docid;
+    public void setNews_Title(String news_Title) {
+        this.news_Title = news_Title;
     }
 
-    public String getTitle() {
-        return title;
+    public String getNews_URL() {
+        return news_URL;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setNews_URL(String news_URL) {
+        this.news_URL = news_URL;
     }
 
-    public String getLtitle() {
-        return ltitle;
+    public String getNews_Video() {
+        return news_Video;
     }
 
-    public void setLtitle(String ltitle) {
-        this.ltitle = ltitle;
+    public void setNews_Video(String news_Video) {
+        this.news_Video = news_Video;
     }
 
-    public int getOrder() {
-        return order;
+    public String getNews_Intro() {
+        return news_Intro;
     }
 
-    public void setOrder(int order) {
-        this.order = order;
-    }
-
-    public int getPriority() {
-        return priority;
-    }
-
-    public void setPriority(int priority) {
-        this.priority = priority;
-    }
-
-    public String getLmodify() {
-        return lmodify;
-    }
-
-    public void setLmodify(String lmodify) {
-        this.lmodify = lmodify;
-    }
-
-    public String getBoardid() {
-        return boardid;
-    }
-
-    public void setBoardid(String boardid) {
-        this.boardid = boardid;
-    }
-
-    public String getPhotosetID() {
-        return photosetID;
-    }
-
-    public void setPhotosetID(String photosetID) {
-        this.photosetID = photosetID;
-    }
-
-    public String getTemplate() {
-        return template;
-    }
-
-    public void setTemplate(String template) {
-        this.template = template;
-    }
-
-    public int getVotecount() {
-        return votecount;
-    }
-
-    public void setVotecount(int votecount) {
-        this.votecount = votecount;
-    }
-
-    public String getSkipID() {
-        return skipID;
-    }
-
-    public void setSkipID(String skipID) {
-        this.skipID = skipID;
-    }
-
-    public String getAlias() {
-        return alias;
-    }
-
-    public void setAlias(String alias) {
-        this.alias = alias;
-    }
-
-    public String getSkipType() {
-        return skipType;
-    }
-
-    public void setSkipType(String skipType) {
-        this.skipType = skipType;
-    }
-
-    public String getCid() {
-        return cid;
-    }
-
-    public void setCid(String cid) {
-        this.cid = cid;
-    }
-
-    public int getHasAD() {
-        return hasAD;
-    }
-
-    public void setHasAD(int hasAD) {
-        this.hasAD = hasAD;
-    }
-
-    public String getSource() {
-        return source;
-    }
-
-    public void setSource(String source) {
-        this.source = source;
-    }
-
-    public String getEname() {
-        return ename;
-    }
-
-    public void setEname(String ename) {
-        this.ename = ename;
-    }
-
-    public String getImgsrc() {
-        return imgsrc;
-    }
-
-    public void setImgsrc(String imgsrc) {
-        this.imgsrc = imgsrc;
-    }
-
-    public String getTname() {
-        return tname;
-    }
-
-    public void setTname(String tname) {
-        this.tname = tname;
-    }
-
-    public String getPtime() {
-        return ptime;
-    }
-
-    public void setPtime(String ptime) {
-        this.ptime = ptime;
-    }
-
-    public List<AdsBean> getAds() {
-        return ads;
-    }
-
-    public void setAds(List<AdsBean> ads) {
-        this.ads = ads;
-    }
-
-    public List<ImgextraBean> getImgextra() {
-        return imgextra;
-    }
-
-    public void setImgextra(List<ImgextraBean> imgextra) {
-        this.imgextra = imgextra;
-    }
-
-    public static class AdsBean {
-        private String title;
-        private String tag;
-        private String imgsrc;
-        private String subtitle;
-        private String url;
-
-        public String getTitle() {
-            return title;
-        }
-
-        public void setTitle(String title) {
-            this.title = title;
-        }
-
-        public String getTag() {
-            return tag;
-        }
-
-        public void setTag(String tag) {
-            this.tag = tag;
-        }
-
-        public String getImgsrc() {
-            return imgsrc;
-        }
-
-        public void setImgsrc(String imgsrc) {
-            this.imgsrc = imgsrc;
-        }
-
-        public String getSubtitle() {
-            return subtitle;
-        }
-
-        public void setSubtitle(String subtitle) {
-            this.subtitle = subtitle;
-        }
-
-        public String getUrl() {
-            return url;
-        }
-
-        public void setUrl(String url) {
-            this.url = url;
-        }
-    }
-
-    public static class ImgextraBean {
-        private String imgsrc;
-
-        public String getImgsrc() {
-            return imgsrc;
-        }
-
-        public void setImgsrc(String imgsrc) {
-            this.imgsrc = imgsrc;
-        }
+    public void setNews_Intro(String news_Intro) {
+        this.news_Intro = news_Intro;
     }
 }

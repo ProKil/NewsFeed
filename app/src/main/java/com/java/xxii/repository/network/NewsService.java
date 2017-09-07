@@ -19,6 +19,7 @@ package com.java.xxii.repository.network;
 import com.java.xxii.mvp.entity.GirlData;
 import com.java.xxii.mvp.entity.NewsDetail;
 import com.java.xxii.mvp.entity.NewsSummary;
+import com.java.xxii.mvp.entity.NewsSummaryRetrieve;
 
 import java.util.List;
 import java.util.Map;
@@ -27,6 +28,7 @@ import okhttp3.ResponseBody;
 import retrofit2.http.GET;
 import retrofit2.http.Header;
 import retrofit2.http.Path;
+import retrofit2.http.Query;
 import retrofit2.http.Url;
 import rx.Observable;
 
@@ -35,11 +37,12 @@ import rx.Observable;
  * @version 1.0 2016/5/24
  */
 public interface NewsService {
-    @GET("nc/article/{type}/{id}/{startPage}-20.html")
-    Observable<Map<String, List<NewsSummary>>> getNewsList(
+//    @GET("nc/article/{type}/{id}/{startPage}-20.html")
+    @GET("action/query/latest")
+    Observable<NewsSummaryRetrieve> getNewsList(
             @Header("Cache-Control") String cacheControl,
-            @Path("type") String type, @Path("id") String id,
-            @Path("startPage") int startPage);
+             @Query("category") int id);
+//            @@Path("type") String type,Path("startPage") int startPage);
 
     @GET("nc/article/{postId}/full.html")
     Observable<Map<String, NewsDetail>> getNewDetail(

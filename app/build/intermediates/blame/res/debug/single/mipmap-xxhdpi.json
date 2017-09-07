@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png",
+        "source": "/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_theme_mode.png",
+        "source": "/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/src/main/res/mipmap-xxhdpi/ic_theme_mode.png"
+    },
+    {
+        "merged": "/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_logo.png",
+        "source": "/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/src/main/res/mipmap-xxhdpi/ic_logo.png"
+    }
+]

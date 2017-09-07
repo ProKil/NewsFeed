@@ -1,0 +1,4 @@
+#Thu Sep 07 18:16:59 CST 2017
+base.0=/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6
+renamed.0=classes.dex
+file.0=/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex

@@ -20,6 +20,7 @@ import com.java.xxii.common.ApiConstants;
 import com.java.xxii.common.HostType;
 import com.java.xxii.listener.RequestCallBack;
 import com.java.xxii.mvp.entity.NewsSummary;
+import com.java.xxii.mvp.entity.NewsSummaryRetrieve;
 import com.java.xxii.mvp.interactor.NewsListInteractor;
 import com.java.xxii.repository.network.RetrofitManager;
 import com.java.xxii.utils.MyUtils;
@@ -57,21 +58,17 @@ public class NewsListInteractorImpl implements NewsListInteractor<List<NewsSumma
         // unsubscribe也在主线程，然后如果这时候调用call.cancel会导致NetworkOnMainThreadException
         // 加一句unsubscribeOn(io)
         return RetrofitManager.getInstance(HostType.NETEASE_NEWS_VIDEO).getNewsListObservable(type, id, startPage)
-                .flatMap(new Func1<Map<String, List<NewsSummary>>, Observable<NewsSummary>>() {
+                .flatMap(new Func1<NewsSummaryRetrieve, Observable<NewsSummary>>() {
                     @Override
-                    public Observable<NewsSummary> call(Map<String, List<NewsSummary>> map) {
-                        if (id.endsWith(ApiConstants.HOUSE_ID)) {
-                            // 房产实际上针对地区的它的id与返回key不同
-                            return Observable.from(map.get("北京"));
-                        }
-                        return Observable.from(map.get(id));
+                    public Observable<NewsSummary> call(NewsSummaryRetrieve map) {
+                        return Observable.from(map.getList());
                     }
                 })
                 .map(new Func1<NewsSummary, NewsSummary>() {
                     @Override
                     public NewsSummary call(NewsSummary newsSummary) {
-                        String ptime = MyUtils.formatDate(newsSummary.getPtime());
-                        newsSummary.setPtime(ptime);
+                        String ptime = MyUtils.formatDate(newsSummary.getNews_Time());
+                        newsSummary.setNews_Time(ptime);
                         return newsSummary;
                     }
                 })
@@ -80,7 +77,7 @@ public class NewsListInteractorImpl implements NewsListInteractor<List<NewsSumma
                 .toSortedList(new Func2<NewsSummary, NewsSummary, Integer>() {
                     @Override
                     public Integer call(NewsSummary newsSummary, NewsSummary newsSummary2) {
-                        return newsSummary2.getPtime().compareTo(newsSummary.getPtime());
+                        return newsSummary2.getNews_Time().compareTo(newsSummary.getNews_Time());
                     }
                 })
                 .compose(TransformUtils.<List<NewsSummary>>defaultSchedulers())
