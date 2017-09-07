@@ -22,11 +22,11 @@ package com.java.xxii.common;
  */
 public class ApiConstants {
     public static final String NETEAST_HOST = "http://166.111.68.66:2042/news/";
-    public static final String END_URL = "-20.html";
-    public static final String ENDDETAIL_URL = "/full.html";
+    //public static final String END_URL = "-20.html";
+   // public static final String ENDDETAIL_URL = "/full.html";
 
     // 新闻详情
-    public static final String NEWS_DETAIL = NETEAST_HOST + "nc/article/";
+   // public static final String NEWS_DETAIL = NETEAST_HOST + "nc/article/";
 
     // 头条TYPE
     public static final String HEADLINE_TYPE = "headline";

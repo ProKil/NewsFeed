@@ -121,11 +121,11 @@ public class NewsDetailActivity extends BaseActivity implements NewsDetailView {
     @SuppressWarnings("deprecation")
     @Override
     public void setNewsDetail(NewsDetail newsDetail) {
-        mShareLink = newsDetail.getShareLink();
-        mNewsTitle = newsDetail.getTitle();
-        String newsSource = newsDetail.getSource();
-        String newsTime = MyUtils.formatDate(newsDetail.getPtime());
-        String newsBody = newsDetail.getBody();
+        mShareLink = newsDetail.getNews_URL();
+        mNewsTitle = newsDetail.getNews_Title();
+        String newsSource = newsDetail.getNews_Source();
+        String newsTime = MyUtils.formatDate(newsDetail.getNews_Time());
+        String newsBody = newsDetail.getNews_Content();
         String NewsImgSrc = getImgSrcs(newsDetail);
 
 
@@ -181,7 +181,7 @@ public class NewsDetailActivity extends BaseActivity implements NewsDetailView {
     }
 
     private void setBody(NewsDetail newsDetail, String newsBody) {
-        int imgTotal = newsDetail.getImg().size();
+        int imgTotal = newsDetail.getNews_Pictures().length;
         if (isShowBody(newsBody, imgTotal)) {
 //              mNewsDetailBodyTv.setMovementMethod(LinkMovementMethod.getInstance());//加这句才能让里面的超链接生效,实测经常卡机崩溃
             mUrlImageGetter = new URLImageGetter(mNewsDetailBodyTv, newsBody, imgTotal);
@@ -196,10 +196,10 @@ public class NewsDetailActivity extends BaseActivity implements NewsDetailView {
     }
 
     private String getImgSrcs(NewsDetail newsDetail) {
-        List<NewsDetail.ImgBean> imgSrcs = newsDetail.getImg();
+        String[] imgSrcs = newsDetail.getNews_Pictures();
         String imgSrc;
-        if (imgSrcs != null && imgSrcs.size() > 0) {
-            imgSrc = imgSrcs.get(0).getSrc();
+        if (imgSrcs != null && imgSrcs.length > 0) {
+            imgSrc = imgSrcs[0];
         } else {
             imgSrc = getIntent().getStringExtra(Constants.NEWS_IMG_RES);
         }
