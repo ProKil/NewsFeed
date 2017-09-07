@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.java.xxii"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="22_朱昊"
+        android:largeHeap="true"
+        android:theme="@style/BaseAppTheme">
+
+        <!-- android:fullBackupContent="true"  可以通过将应用数据自动备份到 Google Drive，帮助确保提供卓越的用户体验。 这样，即使用户更换或升级设备，应用数据也可自动恢复。 -->
+        <!--
+                android:largeHeap
+                dalvik.vm.heapsize=128m
+                dalvik.vm.heapgrowthlimit=64m
+                heapgrowthlimit就是一个普通应用的内存限制，用ActivityManager.getLargeMemoryClass()获得的值就是这个。而heapsize是在manifest中设置了largeHeap=true之后，可以使用的最大内存值。
+        -->
+        <activity
+            android:name=".mvp.ui.activities.SplashActivity"
+            android:excludeFromRecents="false"
+            android:theme="@style/BaseAppTheme.Trans">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".mvp.ui.activities.NewsActivity"
+            android:theme="@style/BaseAppTheme.NoTrans">
+        </activity>
+        <activity
+            android:name=".mvp.ui.activities.NewsDetailActivity"
+            android:theme="@style/BaseAppTheme.NoTrans"/>
+        <activity
+            android:name=".mvp.ui.activities.NewsChannelActivity"
+            android:theme="@style/BaseAppTheme.NoTrans">
+        </activity>
+        <activity
+            android:name=".mvp.ui.activities.NewsPhotoDetailActivity"
+            android:theme="@style/BaseAppTheme.NoTrans">
+        </activity>
+        <activity
+            android:name=".mvp.ui.activities.NewsBrowserActivity"
+            android:theme="@style/BaseAppTheme.NoTrans">
+        </activity>
+        <activity
+            android:name=".mvp.ui.activities.PhotoActivity"
+            android:theme="@style/BaseAppTheme.NoTrans">
+        </activity>
+        <activity
+            android:name=".mvp.ui.activities.PhotoDetailActivity"
+            android:theme="@style/BaseAppTheme.Trans">
+        </activity>
+        <activity
+            android:name=".mvp.ui.activities.AboutActivity"
+            android:theme="@style/BaseAppTheme.NoTrans">
+        </activity>
+    </application>
+
+</manifest>
