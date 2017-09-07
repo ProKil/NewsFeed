@@ -159,7 +159,7 @@ public class NewsDetail {
 
     public String[] getNews_Pictures() {
 
-        return news_Pictures.split(" ");
+        return news_Pictures.split(";");
     }
 
     public void setNews_Pictures(String news_Pictures) {

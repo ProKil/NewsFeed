@@ -25,9 +25,8 @@ import com.java.xxii.repository.network.RetrofitManager;
 import com.java.xxii.utils.MyUtils;
 import com.java.xxii.utils.TransformUtils;
 import com.socks.library.KLog;
+import java.util.regex.*;
 
-import java.util.List;
-import java.util.Map;
 
 import javax.inject.Inject;
 
@@ -64,34 +63,35 @@ public class NewsDetailInteractorImpl implements NewsDetailInteractor<NewsDetail
 
                     @Override
                     public void onNext(NewsDetail newsDetail) {
+                        changeNewsDetail(newsDetail);
                         callBack.success(newsDetail);
                     }
                 });
     }
 
-    private void changeNewsDetail(NewsDetail newsDetail) {
+    private NewsDetail changeNewsDetail(NewsDetail newsDetail) {
+        String newsBody = newsDetail.getNews_Content();
+        newsBody = "<p>   " + newsBody;
+        newsBody = newsBody.replaceAll("\\s{2,}", "<\\/p><p>　　");
+        newsBody = newsBody + "<\\/p>";
         String[] imgSrcs = newsDetail.getNews_Pictures();
         if (isChange(imgSrcs)) {
-            String newsBody = newsDetail.getNews_Content();
             newsBody = changeNewsBody(imgSrcs, newsBody);
             newsDetail.setNews_Content(newsBody);
         }
+        return newsDetail;
     }
 
     private boolean isChange(String[] imgSrcs) {
-        return imgSrcs != null && imgSrcs.length >= 2 && App.isHavePhoto();
+        return imgSrcs != null && imgSrcs.length >= 1 && App.isHavePhoto();
     }
 
     private String changeNewsBody(String[] imgSrcs, String newsBody) {
-        for (int i = 0; i < imgSrcs.length; i++) {
-            String oldChars = "<!--IMG#" + i + "-->";
+        for (int i = 1; i < imgSrcs.length; i++) {
+            String oldChars = "</p><p>　　";
             String newChars;
-            if (i == 0) {
-                newChars = "";
-            } else {
-                newChars = "<img src=\"" + imgSrcs[i] + "\" />";
-            }
-            newsBody = newsBody.replace(oldChars, newChars);
+            newChars = "<\\/p><img src=\"" + imgSrcs[i] + "\" /><p>";
+            newsBody = newsBody.replaceFirst(oldChars, newChars);
 
         }
         return newsBody;
