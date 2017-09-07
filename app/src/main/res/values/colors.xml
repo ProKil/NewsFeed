@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#8BC34A</color>
-    <color name="colorPrimaryDark">#689F38</color>
+    <color name="colorPrimary">#1976d2</color>
+    <color name="colorPrimaryDark">#01579b</color>
     <color name="colorAccent">#FF5252</color>
 
     <color name="night_mask">#00000000</color>
