@@ -21,7 +21,7 @@ package com.java.xxii.common;
  * @version 1.0 2016/5/25
  */
 public class ApiConstants {
-    public static final String NETEAST_HOST = "http://c.m.163.com/";
+    public static final String NETEAST_HOST = "http://166.111.68.66:2042/news/";
     public static final String END_URL = "-20.html";
     public static final String ENDDETAIL_URL = "/full.html";
 
@@ -41,7 +41,9 @@ public class ApiConstants {
     //    public static final String BEIJING_ID = "5YyX5Lqs";
 
     // 头条id
-    public static final String HEADLINE_ID = "T1348647909107";
+    // public static final String HEADLINE_ID = "T1348647909107";
+    public static final String HEADLINE_ID = "1";
+
     // 房产id
     public static final String HOUSE_ID = "5YyX5Lqs";
     // 足球
@@ -51,9 +53,11 @@ public class ApiConstants {
     // 体育
     public static final String SPORTS_ID = "T1348649079062";
     // 财经
-    public static final String FINANCE_ID = "T1348648756099";
+    // public static final String FINANCE_ID = "T1348648756099";
+    public static final String FINANCE_ID = "3";
     // 科技
-    public static final String TECH_ID = "T1348649580692";
+    // public static final String TECH_ID = "T1348649580692";
+    public static final String TECH_ID = "2";
     // 电影
     public static final String MOVIE_ID = "T1348648650048";
     // 汽车

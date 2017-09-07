@@ -75,8 +75,9 @@ public class RetrofitManager {
 
     private static SparseArray<RetrofitManager> sRetrofitManager = new SparseArray<>(HostType.TYPE_COUNT);
 
-    public RetrofitManager(@HostType.HostTypeChecker int hostType) {
-        Retrofit retrofit = new Retrofit.Builder().baseUrl(ApiConstants.getHost(hostType))
+    public RetrofitManager(@HostType.HostTypeChecker int hostType) { // set host name by hostType
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl(ApiConstants.getHost(hostType))
                 .client(getOkHttpClient()).addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create()).build();
         mNewsService = retrofit.create(NewsService.class);
@@ -176,7 +177,9 @@ public class RetrofitManager {
      */
     public Observable<Map<String, List<NewsSummary>>> getNewsListObservable(
             String newsType, String newsId, int startPage) {
-        return mNewsService.getNewsList(getCacheControl(), newsType, newsId, startPage);
+//        return mNewsService.getNewsList(getCacheControl(), newsType, newsId, startPage);
+        Observable<Map<String, List<NewsSummary>>>  a = mNewsService.getNewsList(getCacheControl(), Integer.valueOf(newsId));
+        return a;
     }
 
     /**
