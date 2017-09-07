@@ -26,3 +26,6 @@ As for IDE, we use Android Studio.
 - [ ] Fluency
 - [ ] UI Design
 - [ ] Image completion
+
+## Acknowledgement
+During developing our app, we refered to [ColorfulNews](https://github.com/kaku2015/ColorfulNews).
