@@ -3,7 +3,7 @@
 This is the course project of Java Summer 2017. We use Git as version control system and Gradle as build tool.
 As for IDE, we use Android Studio.
 
-## Requirement
+## Requirements
 
 1. Android Studio 2.3.3
 2. Android SDK 4.0.3
