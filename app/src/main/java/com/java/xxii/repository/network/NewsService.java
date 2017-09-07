@@ -46,7 +46,7 @@ public interface NewsService {
 
     //@GET("nc/article/{postId}/full.html")
     @GET("action/query/detail")
-    Observable<Map<String, NewsDetail>> getNewDetail(
+    Observable<NewsDetail> getNewDetail(
             @Header("Cache-Control") String cacheControl,
             @Query("newsId") String newsId);
 

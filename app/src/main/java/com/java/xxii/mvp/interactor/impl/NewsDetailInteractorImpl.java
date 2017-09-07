@@ -47,17 +47,8 @@ public class NewsDetailInteractorImpl implements NewsDetailInteractor<NewsDetail
 
     @Override
     public Subscription loadNewsDetail(final RequestCallBack<NewsDetail> callBack, final String newsId) {
-        return RetrofitManager.getInstance(HostType.NETEASE_NEWS_VIDEO).getNewsDetailObservable(newsId)
-                .map(new Func1<Map<String, NewsDetail>, NewsDetail>() {
-                    @Override
-                    public NewsDetail call(Map<String, NewsDetail> map) {
-                        KLog.d(Thread.currentThread().getName());
-
-                        NewsDetail newsDetail = map.get(newsId);
-                        changeNewsDetail(newsDetail);
-                        return newsDetail;
-                    }
-                })
+        return RetrofitManager.getInstance(HostType.NETEASE_NEWS_VIDEO)
+                .getNewsDetailObservable(newsId)
                 .compose(TransformUtils.<NewsDetail>defaultSchedulers())
                 .subscribe(new Observer<NewsDetail>() {
                     @Override
