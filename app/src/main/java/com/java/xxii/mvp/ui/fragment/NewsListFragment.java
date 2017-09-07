@@ -259,7 +259,7 @@ public class NewsListFragment extends BaseFragment implements NewsListView, News
     private NewsPhotoDetail getPhotoDetail(int position) {
         NewsSummary newsSummary = mNewsListAdapter.getList().get(position);
         NewsPhotoDetail newsPhotoDetail = new NewsPhotoDetail();
-        newsPhotoDetail.setTitle(newsSummary.getTitle());
+        newsPhotoDetail.setTitle(newsSummary.getNews_Title());
         setPictures(newsSummary, newsPhotoDetail);
         return newsPhotoDetail;
     }
@@ -267,17 +267,7 @@ public class NewsListFragment extends BaseFragment implements NewsListView, News
     private void setPictures(NewsSummary newsSummary, NewsPhotoDetail newsPhotoDetail) {
         List<NewsPhotoDetail.Picture> pictureList = new ArrayList<>();
 
-        if (newsSummary.getAds() != null) {
-            for (NewsSummary.AdsBean entity : newsSummary.getAds()) {
-                setValuesAndAddToList(pictureList, entity.getTitle(), entity.getImgsrc());
-            }
-        } else if (newsSummary.getImgextra() != null) {
-            for (NewsSummary.ImgextraBean entity : newsSummary.getImgextra()) {
-                setValuesAndAddToList(pictureList, null, entity.getImgsrc());
-            }
-        } else {
-            setValuesAndAddToList(pictureList, null, newsSummary.getImgsrc());
-        }
+        setValuesAndAddToList(pictureList, null, newsSummary.getNews_Pictures());
 
         newsPhotoDetail.setPictures(pictureList);
     }
@@ -308,8 +298,8 @@ public class NewsListFragment extends BaseFragment implements NewsListView, News
         List<NewsSummary> newsSummaryList = mNewsListAdapter.getList();
 
         Intent intent = new Intent(mActivity, NewsDetailActivity.class);
-        intent.putExtra(Constants.NEWS_POST_ID, newsSummaryList.get(position).getPostid());
-        intent.putExtra(Constants.NEWS_IMG_RES, newsSummaryList.get(position).getImgsrc());
+        intent.putExtra(Constants.NEWS_POST_ID, newsSummaryList.get(position).getNews_ID());
+        intent.putExtra(Constants.NEWS_IMG_RES, newsSummaryList.get(position).getNews_Pictures());
         return intent;
     }
 

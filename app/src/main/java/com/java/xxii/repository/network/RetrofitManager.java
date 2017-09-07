@@ -25,6 +25,7 @@ import com.java.xxii.common.HostType;
 import com.java.xxii.mvp.entity.GirlData;
 import com.java.xxii.mvp.entity.NewsDetail;
 import com.java.xxii.mvp.entity.NewsSummary;
+import com.java.xxii.mvp.entity.NewsSummaryRetrieve;
 import com.java.xxii.utils.NetUtil;
 import com.socks.library.KLog;
 
@@ -175,10 +176,10 @@ public class RetrofitManager {
      *
      * @param newsType ：headline为头条,house为房产，list为其他
      */
-    public Observable<Map<String, List<NewsSummary>>> getNewsListObservable(
+    public Observable<NewsSummaryRetrieve> getNewsListObservable(
             String newsType, String newsId, int startPage) {
 //        return mNewsService.getNewsList(getCacheControl(), newsType, newsId, startPage);
-        Observable<Map<String, List<NewsSummary>>>  a = mNewsService.getNewsList(getCacheControl(), Integer.valueOf(newsId));
+        Observable<NewsSummaryRetrieve>  a = mNewsService.getNewsList(getCacheControl(), Integer.valueOf(newsId));
         return a;
     }
 

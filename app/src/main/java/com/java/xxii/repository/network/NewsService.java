@@ -19,6 +19,7 @@ package com.java.xxii.repository.network;
 import com.java.xxii.mvp.entity.GirlData;
 import com.java.xxii.mvp.entity.NewsDetail;
 import com.java.xxii.mvp.entity.NewsSummary;
+import com.java.xxii.mvp.entity.NewsSummaryRetrieve;
 
 import java.util.List;
 import java.util.Map;
@@ -38,7 +39,7 @@ import rx.Observable;
 public interface NewsService {
 //    @GET("nc/article/{type}/{id}/{startPage}-20.html")
     @GET("action/query/latest")
-    Observable<Map<String, List<NewsSummary>>> getNewsList(
+    Observable<NewsSummaryRetrieve> getNewsList(
             @Header("Cache-Control") String cacheControl,
              @Query("category") int id);
 //            @@Path("type") String type,Path("startPage") int startPage);
