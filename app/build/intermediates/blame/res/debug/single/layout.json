@@ -44,12 +44,12 @@
         "source": "C:\\Users\\Shinelon\\.android\\build-cache\\9ca0279ef17bf15174a8f47a536df520bca21336\\output\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
-        "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
-        "source": "C:\\Users\\Shinelon\\.android\\build-cache\\9ca0279ef17bf15174a8f47a536df520bca21336\\output\\res\\layout\\abc_action_menu_item_layout.xml"
-    },
-    {
         "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
         "source": "C:\\Users\\Shinelon\\.android\\build-cache\\9ca0279ef17bf15174a8f47a536df520bca21336\\output\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "C:\\Users\\Shinelon\\.android\\build-cache\\9ca0279ef17bf15174a8f47a536df520bca21336\\output\\res\\layout\\abc_action_menu_item_layout.xml"
     },
     {
         "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",

@@ -18,10 +18,7 @@ package com.java.xxii.mvp.entity;
 
 import java.util.List;
 
-/**
- * @author 咖枯
- * @version 1.0 2016/6/4
- */
+
 public class NewsDetail {
 
     /**

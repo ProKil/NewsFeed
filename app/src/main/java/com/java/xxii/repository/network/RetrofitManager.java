@@ -186,7 +186,7 @@ public class RetrofitManager {
     /**
      * example：http://c.m.163.com/nc/article/BG6CGA9M00264N2N/full.html
      */
-    public Observable<Map<String, NewsDetail>> getNewsDetailObservable(String newsId) {
+    public Observable<NewsDetail> getNewsDetailObservable(String newsId) {
         KLog.d(Thread.currentThread().getName());
 
         return mNewsService.getNewDetail(getCacheControl(), newsId);

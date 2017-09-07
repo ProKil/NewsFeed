@@ -3,12 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/NewsFeed.iml" filepath="$PROJECT_DIR$/NewsFeed.iml" />
-      <module fileurl="file://$PROJECT_DIR$/NewsFeed.iml" filepath="$PROJECT_DIR$/NewsFeed.iml" />
       <module fileurl="file://D:/../../Academic Learning/2017Summer/Java/project/NewsFeed/NewsFeed.iml" filepath="D:/../../Academic Learning/2017Summer/Java/project/NewsFeed/NewsFeed.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://D:/../../Academic Learning/2017Summer/Java/project/NewsFeed/app/app.iml" filepath="D:/../../Academic Learning/2017Summer/Java/project/NewsFeed/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/daogenerator/daogenerator.iml" filepath="$PROJECT_DIR$/daogenerator/daogenerator.iml" />
       <module fileurl="file://$PROJECT_DIR$/daogenerator/daogenerator.iml" filepath="$PROJECT_DIR$/daogenerator/daogenerator.iml" />
       <module fileurl="file://D:/../../Academic Learning/2017Summer/Java/project/NewsFeed/daogenerator/daogenerator.iml" filepath="D:/../../Academic Learning/2017Summer/Java/project/NewsFeed/daogenerator/daogenerator.iml" />
     </modules>
