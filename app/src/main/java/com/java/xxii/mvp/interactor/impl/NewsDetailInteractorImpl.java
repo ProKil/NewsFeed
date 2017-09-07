@@ -46,14 +46,14 @@ public class NewsDetailInteractorImpl implements NewsDetailInteractor<NewsDetail
     }
 
     @Override
-    public Subscription loadNewsDetail(final RequestCallBack<NewsDetail> callBack, final String postId) {
-        return RetrofitManager.getInstance(HostType.NETEASE_NEWS_VIDEO).getNewsDetailObservable(postId)
+    public Subscription loadNewsDetail(final RequestCallBack<NewsDetail> callBack, final String newsId) {
+        return RetrofitManager.getInstance(HostType.NETEASE_NEWS_VIDEO).getNewsDetailObservable(newsId)
                 .map(new Func1<Map<String, NewsDetail>, NewsDetail>() {
                     @Override
                     public NewsDetail call(Map<String, NewsDetail> map) {
                         KLog.d(Thread.currentThread().getName());
 
-                        NewsDetail newsDetail = map.get(postId);
+                        NewsDetail newsDetail = map.get(newsId);
                         changeNewsDetail(newsDetail);
                         return newsDetail;
                     }
@@ -79,26 +79,26 @@ public class NewsDetailInteractorImpl implements NewsDetailInteractor<NewsDetail
     }
 
     private void changeNewsDetail(NewsDetail newsDetail) {
-        List<NewsDetail.ImgBean> imgSrcs = newsDetail.getImg();
+        String[] imgSrcs = newsDetail.getNews_Pictures();
         if (isChange(imgSrcs)) {
-            String newsBody = newsDetail.getBody();
+            String newsBody = newsDetail.getNews_Content();
             newsBody = changeNewsBody(imgSrcs, newsBody);
-            newsDetail.setBody(newsBody);
+            newsDetail.setNews_Content(newsBody);
         }
     }
 
-    private boolean isChange(List<NewsDetail.ImgBean> imgSrcs) {
-        return imgSrcs != null && imgSrcs.size() >= 2 && App.isHavePhoto();
+    private boolean isChange(String[] imgSrcs) {
+        return imgSrcs != null && imgSrcs.length >= 2 && App.isHavePhoto();
     }
 
-    private String changeNewsBody(List<NewsDetail.ImgBean> imgSrcs, String newsBody) {
-        for (int i = 0; i < imgSrcs.size(); i++) {
+    private String changeNewsBody(String[] imgSrcs, String newsBody) {
+        for (int i = 0; i < imgSrcs.length; i++) {
             String oldChars = "<!--IMG#" + i + "-->";
             String newChars;
             if (i == 0) {
                 newChars = "";
             } else {
-                newChars = "<img src=\"" + imgSrcs.get(i).getSrc() + "\" />";
+                newChars = "<img src=\"" + imgSrcs[i] + "\" />";
             }
             newsBody = newsBody.replace(oldChars, newChars);
 

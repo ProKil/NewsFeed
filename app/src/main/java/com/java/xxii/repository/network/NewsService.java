@@ -44,10 +44,11 @@ public interface NewsService {
              @Query("category") int id);
 //            @@Path("type") String type,Path("startPage") int startPage);
 
-    @GET("nc/article/{postId}/full.html")
+    //@GET("nc/article/{postId}/full.html")
+    @GET("action/query/detail")
     Observable<Map<String, NewsDetail>> getNewDetail(
             @Header("Cache-Control") String cacheControl,
-            @Path("postId") String postId);
+            @Query("newsId") String newsId);
 
     @GET
     Observable<ResponseBody> getNewsBodyHtmlPhoto(
