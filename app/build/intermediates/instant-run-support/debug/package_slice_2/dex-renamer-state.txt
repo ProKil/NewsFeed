@@ -1,4 +1,4 @@
-#Thu Sep 07 23:04:52 CST 2017
+#Fri Sep 08 02:13:41 CST 2017
 base.0=D\:\\NewsFeed\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_2
 renamed.0=classes.dex
 file.0=D\:\\NewsFeed\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_2\\classes.dex

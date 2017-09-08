@@ -1504,76 +1504,35 @@
         
         <item>头条</item>
         <item>科技</item>
-        <item>财经</item>
-
-        <item>军事</item>
-        <item>体育</item>
-        
-        <item>房产</item>
-        <item>足球</item>
-        <item>娱乐</item>
-        <item>电影</item>
-        <item>汽车</item>
-        <item>笑话</item>
-        <item>游戏</item>
-        <item>时尚</item>
-        <item>情感</item>
-        <item>精选</item>
-        <item>电台</item>
-        <item>NBA</item>
-        <item>数码</item>
-        <item>移动</item>
-        <item>彩票</item>
         <item>教育</item>
-        <item>论坛</item>
-        <item>旅游</item>
-        <item>手机</item>
-        <item>博客</item>
+        <item>军事</item>
+        <item>国内</item>
         <item>社会</item>
-        <item>家居</item>
-        <item>暴雪</item>
-        <item>亲子</item>
-        <item>CBA</item>
-        <item>消息</item>
+        <item>文化</item>
+        <item>汽车</item>
+        <item>国际</item>
+        <item>体育</item>
+        <item>财经</item>
+        <item>健康</item>
+        <item>娱乐</item>
     </string-array><string-array name="news_channel_id">
 
         
-        
+        <item>-1</item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
-        
-        
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
 
-        <item>T1348648141035</item>
-        <item>T1348649079062</item>
-        
-        <item>5YyX5Lqs</item>
-        <item>T1399700447917</item>
-        <item>T1348648517839</item>
-        <item>T1348648650048</item>
-        <item>T1348654060988</item>
-        <item>T1350383429665</item>
-        <item>T1348654151579</item>
-        <item>T1348650593803</item>
-        <item>T1348650839000</item>
-        <item>T1370583240249</item>
-        <item>T1379038288239</item>
-        <item>T1348649145984</item>
-        <item>T1348649776727</item>
-        <item>T1351233117091</item>
-        <item>T1356600029035</item>
-        <item>T1348654225495</item>
-        <item>T1349837670307</item>
-        <item>T1348654204705</item>
-        <item>T1348649654285</item>
-        <item>T1349837698345</item>
-        <item>T1348648037603</item>
-        <item>T1348654105308</item>
-        <item>T1397016069906</item>
-        <item>T1397116135282</item>
-        <item>T1348649475931</item>
-        <item>T1371543208049</item>
+
     </string-array></file><file path="D:\NewsFeed\app\src\main\res\values\colors.xml" qualifiers=""><color name="alpha_75_white">#BFFFFFFF</color><color name="alpha_55_black">#8C000000</color><color name="alpha_65_white">#A6FFFFFF</color><color name="alpha_85_white">#D9FFFFFF</color><color name="alpha_65_black">#A6000000</color><color name="primary_text_white">#deffffff</color><color name="alpha_55_white">#8CFFFFFF</color><color name="alpha_95_white">#F2FFFFFF</color><color name="alpha_75_black">#BF000000</color><color name="item_background">#FAFAFA</color><color name="alpha_35_black">#59000000</color><color name="alpha_45_black">#73000000</color><color name="base_msg_color">#ff999999</color><color name="alpha_35_white">#59FFFFFF</color><color name="alpha_45_white">#73FFFFFF</color><color name="alpha_05_white">#0DFFFFFF</color><color name="alpha_15_white">#26FFFFFF</color><color name="alpha_25_white">#40FFFFFF</color><color name="alpha_05_black">#0D000000</color><color name="alpha_95_black">#F2000000</color><color name="alpha_15_black">#26000000</color><color name="alpha_25_black">#40000000</color><color name="alpha_85_black">#D9000000</color><color name="colorPrimary">#1976d2</color><color name="transparent">#00000000</color><color name="colorAccent">#FF5252</color><color name="progress_bar_unfinished">#D4D4D4</color><color name="tertiary_text">#8a000000</color><color name="gplus_color_3">#427fed</color><color name="gplus_color_2">#f4b400</color><color name="gplus_color_4">#b23424</color><color name="gplus_color_1">#3e802f</color><color name="white">#FFFFFFFF</color><color name="alpha_40_white">#66FFFFFF</color><color name="alpha_50_white">#80FFFFFF</color><color name="alpha_20_black">#33000000</color><color name="alpha_30_black">#4D000000</color><color name="alpha_60_white">#99FFFFFF</color><color name="base_bg">#ffeeeeee</color><color name="alpha_20_white">#33FFFFFF</color><color name="alpha_30_white">#4DFFFFFF</color><color name="alpha_10_black">#1A000000</color><color name="alpha_40_black">#66000000</color><color name="alpha_50_black">#80000000</color><color name="alpha_70_white">#B3FFFFFF</color><color name="alpha_60_black">#99000000</color><color name="black">#FF000000</color><color name="primary_text">#de000000</color><color name="alpha_80_black">#CC000000</color><color name="alpha_90_white">#E6FFFFFF</color><color name="alpha_70_black">#B3000000</color><color name="alpha_90_black">#E6000000</color><color name="alpha_80_white">#CCFFFFFF</color><color name="alpha_10_white">#1AFFFFFF</color><color name="image_place_holder">#DFDFDF</color><color name="container_background">#EBEBEB</color><integer-array name="gplus_colors">
         <item>@color/colorAccent</item>
         <item>@color/gplus_color_2</item>
