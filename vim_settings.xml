@@ -1,0 +1,53 @@
+<application>
+  <component name="VimSettings">
+    <state version="4" enabled="true" />
+    <globalmarks />
+    <filemarks>
+      <file name="/a.dummy" timestamp="1504841318071">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/repository/network/NewsService.java" timestamp="1504841360483">
+        <mark key="[" line="44" column="44" />
+        <mark key="]" line="45" column="16" />
+        <mark key="." line="45" column="16" />
+        <mark key="^" line="45" column="16" />
+      </file>
+      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/repository/network/RetrofitManager.java" timestamp="1504840915913" />
+      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/mvp/presenter/impl/NewsListPresenterImpl.java" timestamp="1504841308033">
+        <mark key="[" line="79" column="15" />
+        <mark key="]" line="79" column="14" />
+        <mark key="." line="79" column="14" />
+        <mark key="^" line="79" column="14" />
+      </file>
+      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/build.gradle" timestamp="1504841848158" />
+    </filemarks>
+    <jumps />
+    <registers>
+      <register name="1" type="2">
+        <text encoding="base64">ICAgICAgICAvLyBUT0RPIDogYWRkZWQgbGluZQo=</text>
+      </register>
+      <register name="&quot;" type="4">
+        <text>TODO</text>
+      </register>
+      <register name=":" type="4">
+        <text>w</text>
+      </register>
+      <register name="-" type="4">
+        <text>TODO</text>
+      </register>
+    </registers>
+    <search>
+      <last-dir>0</last-dir>
+      <show-last>false</show-last>
+    </search>
+    <history>
+      <history-cmd>
+        <entry>w</entry>
+      </history-cmd>
+    </history>
+    <shortcut-conflicts />
+    <editor>
+      <key-repeat enabled="true" />
+    </editor>
+  </component>
+</application>
