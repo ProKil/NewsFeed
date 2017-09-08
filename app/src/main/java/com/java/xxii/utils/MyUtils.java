@@ -64,14 +64,14 @@ public class MyUtils {
     }
 
     /**
-     * from yyyy-MM-dd HH:mm:ss to MM-dd HH:mm
+     * from yyyyMMddHHmmss to MM-dd
      */
     public static String formatDate(String before) {
         String after;
         try {
-            Date date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault())
+            Date date = new SimpleDateFormat("yyyyMMddHHmmss", Locale.getDefault())
                     .parse(before);
-            after = new SimpleDateFormat("MM-dd HH:mm", Locale.getDefault()).format(date);
+            after = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(date);
         } catch (ParseException e) {
             KLog.e("转换新闻日期格式异常：" + e.toString());
             return before;
