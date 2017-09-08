@@ -2,6 +2,15 @@
 <instant-run
     abi="x86"
     api-level="26"
+<<<<<<< HEAD
+    build-mode="FULL"
+    density="420dpi"
+    format="10"
+    plugin-version="2.3.3"
+    timestamp="1504834439439"
+    token="732542420831901394"
+    verifier="FULL_BUILD_REQUESTED" >
+=======
     build-mode="COLD"
     density="xxhdpi"
     format="10"
@@ -9,6 +18,7 @@
     timestamp="1504808746152"
     token="-1793156929819506124"
     verifier="COLD_SWAP_REQUESTED" >
+>>>>>>> master
 
     <task
         name="javac"
@@ -29,7 +39,11 @@
 
     <build
         build-mode="FULL"
+<<<<<<< HEAD
+        timestamp="1504834439439"
+=======
         timestamp="1504808335170"
+>>>>>>> master
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="D:\NewsFeed\app\build\outputs\apk\app-debug.apk"
