@@ -1,4 +1,0 @@
-#Fri Sep 08 10:58:28 CST 2017
-base.0=/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8
-renamed.0=classes.dex
-file.0=/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex

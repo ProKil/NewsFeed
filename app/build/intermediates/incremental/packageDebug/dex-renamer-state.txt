@@ -1,7 +1,0 @@
-#Fri Sep 08 10:58:28 CST 2017
-base.0=/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_0a929b73f64f99a7f49b9079113042c95674ae1e
-renamed.1=classes.dex
-renamed.0=classes2.dex
-file.1=/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_6200449f4fb50187e81b0c6116bf958480350410/classes.dex
-base.1=/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_6200449f4fb50187e81b0c6116bf958480350410
-file.0=/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_0a929b73f64f99a7f49b9079113042c95674ae1e/classes.dex
