@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
     abi="x86"
-    api-level="25"
+    api-level="26"
     build-mode="FULL"
-    density="xhdpi"
+    density="420dpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1504793993280"
+    timestamp="1504834439439"
     token="732542420831901394"
     verifier="FULL_BUILD_REQUESTED" >
 
@@ -62,7 +62,7 @@
 
     <build
         build-mode="FULL"
-        timestamp="1504793993280"
+        timestamp="1504834439439"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
