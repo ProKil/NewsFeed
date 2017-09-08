@@ -1,90 +1,90 @@
 [
     {
-        "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_out.xml",
-        "source": "C:\\Users\\Shinelon\\.android\\build-cache\\fe5cc34201fa4ba513b82ecdba3ba119e906e014\\output\\res\\anim\\design_snackbar_out.xml"
+        "merged": "/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/res/merged/debug/anim/zoomin.xml",
+        "source": "/Users/mushroom/StudioProjects/NewsFeed/app/src/main/res/anim/zoomin.xml"
     },
     {
-        "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
-        "source": "C:\\Users\\Shinelon\\.android\\build-cache\\9ca0279ef17bf15174a8f47a536df520bca21336\\output\\res\\anim\\abc_slide_in_bottom.xml"
+        "merged": "/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/mushroom/.android/build-cache/267b136005a49c8a75407278eb52b5e2e1dcb4d8/output/res/anim/abc_shrink_fade_out_from_bottom.xml"
     },
     {
-        "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_in.xml",
-        "source": "C:\\Users\\Shinelon\\.android\\build-cache\\fe5cc34201fa4ba513b82ecdba3ba119e906e014\\output\\res\\anim\\design_fab_in.xml"
+        "merged": "/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/mushroom/.android/build-cache/267b136005a49c8a75407278eb52b5e2e1dcb4d8/output/res/anim/abc_grow_fade_in_from_bottom.xml"
     },
     {
-        "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\anim\\anim_top_in.xml",
-        "source": "D:\\NewsFeed\\app\\src\\main\\res\\anim\\anim_top_in.xml"
+        "merged": "/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/res/merged/debug/anim/design_snackbar_out.xml",
+        "source": "/Users/mushroom/.android/build-cache/731441da848915d94b1b47dae24e4bb3ed66458e/output/res/anim/design_snackbar_out.xml"
     },
     {
-        "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_in.xml",
-        "source": "C:\\Users\\Shinelon\\.android\\build-cache\\fe5cc34201fa4ba513b82ecdba3ba119e906e014\\output\\res\\anim\\design_snackbar_in.xml"
+        "merged": "/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/res/merged/debug/anim/anim_top_in.xml",
+        "source": "/Users/mushroom/StudioProjects/NewsFeed/app/src/main/res/anim/anim_top_in.xml"
     },
     {
-        "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
-        "source": "C:\\Users\\Shinelon\\.android\\build-cache\\9ca0279ef17bf15174a8f47a536df520bca21336\\output\\res\\anim\\abc_slide_out_top.xml"
+        "merged": "/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_out.xml",
+        "source": "/Users/mushroom/.android/build-cache/731441da848915d94b1b47dae24e4bb3ed66458e/output/res/anim/design_bottom_sheet_slide_out.xml"
     },
     {
-        "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
-        "source": "C:\\Users\\Shinelon\\.android\\build-cache\\9ca0279ef17bf15174a8f47a536df520bca21336\\output\\res\\anim\\abc_fade_in.xml"
+        "merged": "/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
+        "source": "/Users/mushroom/.android/build-cache/267b136005a49c8a75407278eb52b5e2e1dcb4d8/output/res/anim/abc_slide_out_top.xml"
     },
     {
-        "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
-        "source": "C:\\Users\\Shinelon\\.android\\build-cache\\9ca0279ef17bf15174a8f47a536df520bca21336\\output\\res\\anim\\abc_popup_exit.xml"
+        "merged": "/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/res/merged/debug/anim/design_fab_out.xml",
+        "source": "/Users/mushroom/.android/build-cache/731441da848915d94b1b47dae24e4bb3ed66458e/output/res/anim/design_fab_out.xml"
     },
     {
-        "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
-        "source": "C:\\Users\\Shinelon\\.android\\build-cache\\9ca0279ef17bf15174a8f47a536df520bca21336\\output\\res\\anim\\abc_fade_out.xml"
+        "merged": "/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
+        "source": "/Users/mushroom/.android/build-cache/267b136005a49c8a75407278eb52b5e2e1dcb4d8/output/res/anim/abc_popup_enter.xml"
     },
     {
-        "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_bottom_sheet_slide_out.xml",
-        "source": "C:\\Users\\Shinelon\\.android\\build-cache\\fe5cc34201fa4ba513b82ecdba3ba119e906e014\\output\\res\\anim\\design_bottom_sheet_slide_out.xml"
+        "merged": "/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
+        "source": "/Users/mushroom/.android/build-cache/267b136005a49c8a75407278eb52b5e2e1dcb4d8/output/res/anim/abc_fade_in.xml"
     },
     {
-        "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\anim\\zoomin.xml",
-        "source": "D:\\NewsFeed\\app\\src\\main\\res\\anim\\zoomin.xml"
+        "merged": "/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/res/merged/debug/anim/fade_in.xml",
+        "source": "/Users/mushroom/StudioProjects/NewsFeed/app/src/main/res/anim/fade_in.xml"
     },
     {
-        "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
-        "source": "C:\\Users\\Shinelon\\.android\\build-cache\\9ca0279ef17bf15174a8f47a536df520bca21336\\output\\res\\anim\\abc_popup_enter.xml"
+        "merged": "/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
+        "source": "/Users/mushroom/.android/build-cache/267b136005a49c8a75407278eb52b5e2e1dcb4d8/output/res/anim/abc_slide_in_bottom.xml"
     },
     {
-        "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_bottom_sheet_slide_in.xml",
-        "source": "C:\\Users\\Shinelon\\.android\\build-cache\\fe5cc34201fa4ba513b82ecdba3ba119e906e014\\output\\res\\anim\\design_bottom_sheet_slide_in.xml"
+        "merged": "/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
+        "source": "/Users/mushroom/.android/build-cache/267b136005a49c8a75407278eb52b5e2e1dcb4d8/output/res/anim/abc_slide_in_top.xml"
     },
     {
-        "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_out.xml",
-        "source": "C:\\Users\\Shinelon\\.android\\build-cache\\fe5cc34201fa4ba513b82ecdba3ba119e906e014\\output\\res\\anim\\design_fab_out.xml"
+        "merged": "/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
+        "source": "/Users/mushroom/.android/build-cache/267b136005a49c8a75407278eb52b5e2e1dcb4d8/output/res/anim/abc_popup_exit.xml"
     },
     {
-        "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
-        "source": "C:\\Users\\Shinelon\\.android\\build-cache\\9ca0279ef17bf15174a8f47a536df520bca21336\\output\\res\\anim\\abc_slide_out_bottom.xml"
+        "merged": "/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
+        "source": "/Users/mushroom/.android/build-cache/267b136005a49c8a75407278eb52b5e2e1dcb4d8/output/res/anim/abc_fade_out.xml"
     },
     {
-        "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
-        "source": "C:\\Users\\Shinelon\\.android\\build-cache\\9ca0279ef17bf15174a8f47a536df520bca21336\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+        "merged": "/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/res/merged/debug/anim/fade_out.xml",
+        "source": "/Users/mushroom/StudioProjects/NewsFeed/app/src/main/res/anim/fade_out.xml"
     },
     {
-        "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\anim\\anim_bottom_in.xml",
-        "source": "D:\\NewsFeed\\app\\src\\main\\res\\anim\\anim_bottom_in.xml"
+        "merged": "/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/res/merged/debug/anim/anim_bottom_in.xml",
+        "source": "/Users/mushroom/StudioProjects/NewsFeed/app/src/main/res/anim/anim_bottom_in.xml"
     },
     {
-        "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\anim\\anim_rotate_scale_in.xml",
-        "source": "D:\\NewsFeed\\app\\src\\main\\res\\anim\\anim_rotate_scale_in.xml"
+        "merged": "/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
+        "source": "/Users/mushroom/.android/build-cache/267b136005a49c8a75407278eb52b5e2e1dcb4d8/output/res/anim/abc_slide_out_bottom.xml"
     },
     {
-        "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
-        "source": "C:\\Users\\Shinelon\\.android\\build-cache\\9ca0279ef17bf15174a8f47a536df520bca21336\\output\\res\\anim\\abc_slide_in_top.xml"
+        "merged": "/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/res/merged/debug/anim/design_snackbar_in.xml",
+        "source": "/Users/mushroom/.android/build-cache/731441da848915d94b1b47dae24e4bb3ed66458e/output/res/anim/design_snackbar_in.xml"
     },
     {
-        "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\anim\\fade_out.xml",
-        "source": "D:\\NewsFeed\\app\\src\\main\\res\\anim\\fade_out.xml"
+        "merged": "/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/res/merged/debug/anim/design_fab_in.xml",
+        "source": "/Users/mushroom/.android/build-cache/731441da848915d94b1b47dae24e4bb3ed66458e/output/res/anim/design_fab_in.xml"
     },
     {
-        "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
-        "source": "C:\\Users\\Shinelon\\.android\\build-cache\\9ca0279ef17bf15174a8f47a536df520bca21336\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+        "merged": "/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_in.xml",
+        "source": "/Users/mushroom/.android/build-cache/731441da848915d94b1b47dae24e4bb3ed66458e/output/res/anim/design_bottom_sheet_slide_in.xml"
     },
     {
-        "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\anim\\fade_in.xml",
-        "source": "D:\\NewsFeed\\app\\src\\main\\res\\anim\\fade_in.xml"
+        "merged": "/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/res/merged/debug/anim/anim_rotate_scale_in.xml",
+        "source": "/Users/mushroom/StudioProjects/NewsFeed/app/src/main/res/anim/anim_rotate_scale_in.xml"
     }
 ]

@@ -1,10 +1,10 @@
 [
     {
-        "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
-        "source": "C:\\Users\\Shinelon\\.android\\build-cache\\9ca0279ef17bf15174a8f47a536df520bca21336\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
+        "merged": "/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/Users/mushroom/.android/build-cache/267b136005a49c8a75407278eb52b5e2e1dcb4d8/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
     },
     {
-        "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
-        "source": "C:\\Users\\Shinelon\\.android\\build-cache\\9ca0279ef17bf15174a8f47a536df520bca21336\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
+        "merged": "/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/Users/mushroom/.android/build-cache/267b136005a49c8a75407278eb52b5e2e1dcb4d8/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
     }
 ]

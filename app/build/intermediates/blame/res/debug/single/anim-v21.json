@@ -1,10 +1,10 @@
 [
     {
-        "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_out.xml",
-        "source": "C:\\Users\\Shinelon\\.android\\build-cache\\fe5cc34201fa4ba513b82ecdba3ba119e906e014\\output\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
+        "merged": "/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_in.xml",
+        "source": "/Users/mushroom/.android/build-cache/731441da848915d94b1b47dae24e4bb3ed66458e/output/res/anim-v21/design_bottom_sheet_slide_in.xml"
     },
     {
-        "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_in.xml",
-        "source": "C:\\Users\\Shinelon\\.android\\build-cache\\fe5cc34201fa4ba513b82ecdba3ba119e906e014\\output\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
+        "merged": "/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_out.xml",
+        "source": "/Users/mushroom/.android/build-cache/731441da848915d94b1b47dae24e4bb3ed66458e/output/res/anim-v21/design_bottom_sheet_slide_out.xml"
     }
 ]

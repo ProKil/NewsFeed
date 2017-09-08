@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "D:\\NewsFeed\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+        "outputFile": "/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
         "map": [
             {
                 "to": {
@@ -11,13 +11,13 @@
                     "endOffset": 97
                 },
                 "from": {
-                    "file": "D:\\NewsFeed\\app\\src\\main\\res\\values-night\\colors.xml",
+                    "file": "/Users/mushroom/StudioProjects/NewsFeed/app/src/main/res/values-night/colors.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 225,
+                        "startOffset": 219,
                         "endColumn": 46,
-                        "endOffset": 267
+                        "endOffset": 261
                     }
                 }
             },
@@ -30,13 +30,13 @@
                     "endOffset": 148
                 },
                 "from": {
-                    "file": "D:\\NewsFeed\\app\\src\\main\\res\\values-night\\colors.xml",
+                    "file": "/Users/mushroom/StudioProjects/NewsFeed/app/src/main/res/values-night/colors.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 273,
+                        "startOffset": 266,
                         "endColumn": 50,
-                        "endOffset": 319
+                        "endOffset": 312
                     }
                 }
             },
@@ -49,13 +49,13 @@
                     "endOffset": 203
                 },
                 "from": {
-                    "file": "D:\\NewsFeed\\app\\src\\main\\res\\values-night\\colors.xml",
+                    "file": "/Users/mushroom/StudioProjects/NewsFeed/app/src/main/res/values-night/colors.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 518,
+                        "startOffset": 505,
                         "endColumn": 54,
-                        "endOffset": 568
+                        "endOffset": 555
                     }
                 }
             },
@@ -68,13 +68,13 @@
                     "endOffset": 256
                 },
                 "from": {
-                    "file": "D:\\NewsFeed\\app\\src\\main\\res\\values-night\\colors.xml",
+                    "file": "/Users/mushroom/StudioProjects/NewsFeed/app/src/main/res/values-night/colors.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
-                        "startOffset": 841,
+                        "startOffset": 819,
                         "endColumn": 52,
-                        "endOffset": 889
+                        "endOffset": 867
                     }
                 }
             },
@@ -87,13 +87,13 @@
                     "endOffset": 306
                 },
                 "from": {
-                    "file": "D:\\NewsFeed\\app\\src\\main\\res\\values-night\\colors.xml",
+                    "file": "/Users/mushroom/StudioProjects/NewsFeed/app/src/main/res/values-night/colors.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 574,
+                        "startOffset": 560,
                         "endColumn": 49,
-                        "endOffset": 619
+                        "endOffset": 605
                     }
                 }
             },
@@ -106,13 +106,13 @@
                     "endOffset": 353
                 },
                 "from": {
-                    "file": "D:\\NewsFeed\\app\\src\\main\\res\\values-night\\colors.xml",
+                    "file": "/Users/mushroom/StudioProjects/NewsFeed/app/src/main/res/values-night/colors.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 327,
+                        "startOffset": 318,
                         "endColumn": 46,
-                        "endOffset": 369
+                        "endOffset": 360
                     }
                 }
             },
@@ -125,13 +125,13 @@
                     "endOffset": 400
                 },
                 "from": {
-                    "file": "D:\\NewsFeed\\app\\src\\main\\res\\values-night\\colors.xml",
+                    "file": "/Users/mushroom/StudioProjects/NewsFeed/app/src/main/res/values-night/colors.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 625,
+                        "startOffset": 610,
                         "endColumn": 46,
-                        "endOffset": 667
+                        "endOffset": 652
                     }
                 }
             },
@@ -144,13 +144,13 @@
                     "endOffset": 451
                 },
                 "from": {
-                    "file": "D:\\NewsFeed\\app\\src\\main\\res\\values-night\\colors.xml",
+                    "file": "/Users/mushroom/StudioProjects/NewsFeed/app/src/main/res/values-night/colors.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
-                        "startOffset": 694,
+                        "startOffset": 677,
                         "endColumn": 50,
-                        "endOffset": 740
+                        "endOffset": 723
                     }
                 }
             },
@@ -163,13 +163,13 @@
                     "endOffset": 501
                 },
                 "from": {
-                    "file": "D:\\NewsFeed\\app\\src\\main\\res\\values-night\\colors.xml",
+                    "file": "/Users/mushroom/StudioProjects/NewsFeed/app/src/main/res/values-night/colors.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
-                        "startOffset": 767,
+                        "startOffset": 748,
                         "endColumn": 49,
-                        "endOffset": 812
+                        "endOffset": 793
                     }
                 }
             },
@@ -182,7 +182,7 @@
                     "endOffset": 571
                 },
                 "from": {
-                    "file": "C:\\Users\\Shinelon\\.android\\build-cache\\9ca0279ef17bf15174a8f47a536df520bca21336\\output\\res\\values-night-v8\\values-night-v8.xml",
+                    "file": "/Users/mushroom/.android/build-cache/267b136005a49c8a75407278eb52b5e2e1dcb4d8/output/res/values-night-v8/values-night-v8.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -201,7 +201,7 @@
                     "endOffset": 655
                 },
                 "from": {
-                    "file": "C:\\Users\\Shinelon\\.android\\build-cache\\9ca0279ef17bf15174a8f47a536df520bca21336\\output\\res\\values-night-v8\\values-night-v8.xml",
+                    "file": "/Users/mushroom/.android/build-cache/267b136005a49c8a75407278eb52b5e2e1dcb4d8/output/res/values-night-v8/values-night-v8.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -220,7 +220,7 @@
                     "endOffset": 739
                 },
                 "from": {
-                    "file": "C:\\Users\\Shinelon\\.android\\build-cache\\9ca0279ef17bf15174a8f47a536df520bca21336\\output\\res\\values-night-v8\\values-night-v8.xml",
+                    "file": "/Users/mushroom/.android/build-cache/267b136005a49c8a75407278eb52b5e2e1dcb4d8/output/res/values-night-v8/values-night-v8.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -239,7 +239,7 @@
                     "endOffset": 835
                 },
                 "from": {
-                    "file": "C:\\Users\\Shinelon\\.android\\build-cache\\9ca0279ef17bf15174a8f47a536df520bca21336\\output\\res\\values-night-v8\\values-night-v8.xml",
+                    "file": "/Users/mushroom/.android/build-cache/267b136005a49c8a75407278eb52b5e2e1dcb4d8/output/res/values-night-v8/values-night-v8.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -258,7 +258,7 @@
                     "endOffset": 937
                 },
                 "from": {
-                    "file": "C:\\Users\\Shinelon\\.android\\build-cache\\9ca0279ef17bf15174a8f47a536df520bca21336\\output\\res\\values-night-v8\\values-night-v8.xml",
+                    "file": "/Users/mushroom/.android/build-cache/267b136005a49c8a75407278eb52b5e2e1dcb4d8/output/res/values-night-v8/values-night-v8.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -277,7 +277,7 @@
                     "endOffset": 1039
                 },
                 "from": {
-                    "file": "C:\\Users\\Shinelon\\.android\\build-cache\\9ca0279ef17bf15174a8f47a536df520bca21336\\output\\res\\values-night-v8\\values-night-v8.xml",
+                    "file": "/Users/mushroom/.android/build-cache/267b136005a49c8a75407278eb52b5e2e1dcb4d8/output/res/values-night-v8/values-night-v8.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -296,7 +296,7 @@
                     "endOffset": 1133
                 },
                 "from": {
-                    "file": "C:\\Users\\Shinelon\\.android\\build-cache\\9ca0279ef17bf15174a8f47a536df520bca21336\\output\\res\\values-night-v8\\values-night-v8.xml",
+                    "file": "/Users/mushroom/.android/build-cache/267b136005a49c8a75407278eb52b5e2e1dcb4d8/output/res/values-night-v8/values-night-v8.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
