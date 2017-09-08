@@ -1,4 +1,4 @@
-#Thu Sep 07 23:04:51 CST 2017
+#Fri Sep 08 02:13:41 CST 2017
 file.9=D\:\\NewsFeed\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\systembartint-1.0.3_d25aaf99f7be926f74da89fe9ee6a0ee39a4840e\\classes.dex
 base.10=D\:\\NewsFeed\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\adapter-rxjava-2.0.2_86014db488a789e05c009192244098d53146c0f3
 file.8=D\:\\NewsFeed\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\haha-2.0.2_95850699f221af10dda17ab68f875c327122a65d\\classes.dex

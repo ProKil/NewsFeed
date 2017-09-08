@@ -1,4 +1,4 @@
-#Thu Sep 07 23:15:04 CST 2017
+#Fri Sep 08 02:18:59 CST 2017
 base.0=D\:\\NewsFeed\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_5aa18165c8b79058660b9c7935cdd2938d9240b7
 renamed.1=classes2.dex
 renamed.0=classes.dex
