@@ -41,8 +41,9 @@ public interface NewsService {
     @GET("action/query/latest")
     Observable<NewsSummaryRetrieve> getNewsList(
             @Header("Cache-Control") String cacheControl,
-             @Query("category") int id);
-//            @@Path("type") String type,Path("startPage") int startPage);
+             @Query("category") int id,
+            @Query("pageNo") int startPage);
+    // 默认每次一页读20条
 
     //@GET("nc/article/{postId}/full.html")
     @GET("action/query/detail")
