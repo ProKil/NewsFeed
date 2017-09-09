@@ -179,7 +179,7 @@ public class RetrofitManager {
     public Observable<NewsSummaryRetrieve> getNewsListObservable(
             String newsType, String newsId, int startPage) {
 //        return mNewsService.getNewsList(getCacheControl(), newsType, newsId, startPage);
-        Observable<NewsSummaryRetrieve>  a = mNewsService.getNewsList(getCacheControl(), Integer.valueOf(newsId));
+        Observable<NewsSummaryRetrieve>  a = mNewsService.getNewsList(getCacheControl(), Integer.valueOf(newsId), startPage);
         return a;
     }
 
