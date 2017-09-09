@@ -219,6 +219,10 @@ public class NewsListFragment extends BaseFragment implements NewsListView, News
         }
     }
 
+    public Integer getNewsListLength(){
+        return mNewsListAdapter.getList().size();
+    }
+
     private void checkIsEmpty(List<NewsSummary> newsSummary) {
         if (newsSummary == null && mNewsListAdapter.getList() == null) {
             mNewsRV.setVisibility(View.GONE);
