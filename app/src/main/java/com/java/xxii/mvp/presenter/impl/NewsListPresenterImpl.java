@@ -50,6 +50,8 @@ public class NewsListPresenterImpl extends BasePresenterImpl<NewsListView, List<
 
     @Override
     public void onCreate() {
+        //added line mStartPage = 1
+        mStartPage = 1;
         if (mView != null) {
             loadNewsData();
         }
@@ -75,7 +77,8 @@ public class NewsListPresenterImpl extends BasePresenterImpl<NewsListView, List<
     public void success(List<NewsSummary> items) {
         misFirstLoad = true;
         if (items != null) {
-            mStartPage += 20;
+            // changed mStartPage from 20 to 1
+            mStartPage += 1;
         }
 
         int loadType = mIsRefresh ? LoadNewsType.TYPE_REFRESH_SUCCESS : LoadNewsType.TYPE_LOAD_MORE_SUCCESS;
@@ -94,7 +97,8 @@ public class NewsListPresenterImpl extends BasePresenterImpl<NewsListView, List<
 
     @Override
     public void refreshData() {
-        mStartPage = 0;
+        // changed mStartPage from 0 to 1
+        mStartPage = 1;
         mIsRefresh = true;
         loadNewsData();
     }
