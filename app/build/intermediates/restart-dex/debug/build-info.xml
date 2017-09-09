@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
     abi="x86"
-    api-level="26"
+    api-level="25"
     build-mode="COLD"
-    density="420dpi"
+    density="xhdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1504841336410"
-    token="-1662230142174782616"
+    timestamp="1504924453347"
+    token="732542420831901394"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="5939" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
@@ -25,64 +25,48 @@
 
     <build
         build-mode="FULL"
-        timestamp="1504840498380"
+        timestamp="1504924122334"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            location="/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            location="/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            location="/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            location="/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/mushroom/StudioProjects/NewsFeed/app/build/outputs/apk/app-debug.apk"
+            location="/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/outputs/apk/app-debug.apk"
             type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1504840699901"
-        verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            location="/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
             type="SPLIT" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1504841196847"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/mushroom/StudioProjects/NewsFeed/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
-            type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1504841336410"
+        timestamp="1504924453347"
         verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>
