@@ -33,6 +33,7 @@ import com.java.xxii.listener.OnItemClickListener;
 import com.java.xxii.mvp.entity.NewsSummary;
 import com.java.xxii.mvp.ui.adapter.base.BaseRecyclerViewAdapter;
 import com.java.xxii.utils.DimenUtil;
+import com.java.xxii.utils.MyUtils;
 
 import java.util.List;
 
@@ -66,7 +67,10 @@ public class NewsListAdapter extends BaseRecyclerViewAdapter<NewsSummary> {
                 view = getView(parent, R.layout.item_news_footer);
                 return new FooterViewHolder(view);
             case TYPE_ITEM:
-                view = getView(parent, R.layout.item_news);
+                if(MyUtils.isTextMode())
+                    view = getView(parent, R.layout.item_news_text);
+                else
+                    view = getView(parent, R.layout.item_news);
                 final ItemViewHolder itemViewHolder = new ItemViewHolder(view);
                 setItemOnClickEvent(itemViewHolder, false);
                 return itemViewHolder;
@@ -129,13 +133,14 @@ public class NewsListAdapter extends BaseRecyclerViewAdapter<NewsSummary> {
         holder.mNewsSummaryTitleTv.setText(title);
         holder.mNewsSummaryPtimeTv.setText(ptime);
         holder.mNewsSummaryDigestTv.setText(digest);
-
-        Glide.with(App.getAppContext()).load(imgSrc).asBitmap() // gif格式有时会导致整体图片不显示，貌似有冲突
-                .format(DecodeFormat.PREFER_ARGB_8888)
-                .diskCacheStrategy(DiskCacheStrategy.ALL)
-                .placeholder(R.color.image_place_holder)
-                .error(R.drawable.ic_load_fail)
-                .into(holder.mNewsSummaryPhotoIv);
+        if (!MyUtils.isTextMode()){
+            Glide.with(App.getAppContext()).load(imgSrc).asBitmap() // gif格式有时会导致整体图片不显示，貌似有冲突
+                    .format(DecodeFormat.PREFER_ARGB_8888)
+                    .diskCacheStrategy(DiskCacheStrategy.ALL)
+                    .placeholder(R.color.image_place_holder)
+                    .error(R.drawable.ic_load_fail)
+                    .into(holder.mNewsSummaryPhotoIv);
+        }
     }
 
     private void setPhotoItemValues(PhotoViewHolder holder, int position) {

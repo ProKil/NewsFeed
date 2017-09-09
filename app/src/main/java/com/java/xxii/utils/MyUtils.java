@@ -49,12 +49,24 @@ public class MyUtils {
                 Constants.SHARES_COLOURFUL_NEWS, Activity.MODE_PRIVATE);
         return preferences.getBoolean(Constants.NIGHT_THEME_MODE, false);
     }
+    public static boolean isTextMode()  {
+        SharedPreferences preferences = App.getAppContext().getSharedPreferences(
+                Constants.SHARES_COLOURFUL_NEWS, Activity.MODE_PRIVATE);
+        return preferences.getBoolean(Constants.TEXT_THEME_MODE, false);
+    }
 
     public static void saveTheme(boolean isNight) {
         SharedPreferences preferences = App.getAppContext().getSharedPreferences(
                 Constants.SHARES_COLOURFUL_NEWS, Activity.MODE_PRIVATE);
         SharedPreferences.Editor editor = preferences.edit();
         editor.putBoolean(Constants.NIGHT_THEME_MODE, isNight);
+        editor.apply();
+    }
+    public static void saveTextTheme(boolean isText) {
+        SharedPreferences preferences = App.getAppContext().getSharedPreferences(
+                Constants.SHARES_COLOURFUL_NEWS, Activity.MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putBoolean(Constants.TEXT_THEME_MODE, isText);
         editor.apply();
     }
 

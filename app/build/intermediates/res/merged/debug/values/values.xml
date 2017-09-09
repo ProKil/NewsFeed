@@ -804,6 +804,7 @@
     <string name="share">分享</string>
     <string name="share_contents">来自「年轻资讯」的分享：%1$s %2$s</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="text_mode">文字模式</string>
     <string name="tools">设置</string>
     <string name="transition_photos">transition_animation_news_photos</string>
     <string name="version">v1.0</string>
