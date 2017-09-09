@@ -75,10 +75,9 @@ public class NewsDetailInteractorImpl implements NewsDetailInteractor<NewsDetail
         newsBody = newsBody.replaceAll("\\s{2,}", "<\\/p><p>　　");
         newsBody = newsBody + "<\\/p>";
         String[] imgSrcs = newsDetail.getNews_Pictures();
-        if (isChange(imgSrcs)) {
+        if (isChange(imgSrcs)&&!MyUtils.isTextMode())
             newsBody = changeNewsBody(imgSrcs, newsBody);
-            newsDetail.setNews_Content(newsBody);
-        }
+        newsDetail.setNews_Content(newsBody);
         return newsDetail;
     }
 
