@@ -291,7 +291,10 @@ public class NewsDetailActivity extends BaseActivity implements NewsDetailView {
         mySynthesizer.setParameter(SpeechConstant.PITCH,"50");
         //设置音量
         mySynthesizer.setParameter(SpeechConstant.VOLUME,"50");
-        int code = mySynthesizer.startSpeaking(mNewsContent, mTtsListener);
+
+        mNewsContent = mNewsContent.replaceAll("<[^<]*>","");
+
+        int code = mySynthesizer.startSpeaking("杨爷爷好强啊" + mNewsContent, mTtsListener);
         Log.d("mySynthesiezer start code:", code + " ");
         /*
 
@@ -355,7 +358,7 @@ public class NewsDetailActivity extends BaseActivity implements NewsDetailView {
     @Override
     protected void onDestroy() {
         cancelUrlImageGetterSubscription();
-        mySynthesizer.stopSpeaking();
+        mySynthesizer.destroy();
         super.onDestroy();
 
     }
