@@ -44,6 +44,7 @@ import com.java.xxii.annotation.BindValues;
 import com.java.xxii.di.component.ActivityComponent;
 import com.java.xxii.di.component.DaggerActivityComponent;
 import com.java.xxii.di.module.ActivityModule;
+import com.java.xxii.greendao.LikeNews;
 import com.java.xxii.mvp.presenter.base.BasePresenter;
 import com.java.xxii.mvp.ui.activities.AboutActivity;
 import com.java.xxii.mvp.ui.activities.NewsActivity;
@@ -124,7 +125,7 @@ public abstract class BaseActivity<T extends BasePresenter> extends AppCompatAct
     }
 
     private void initNightModeSwitch() {
-        if (this instanceof NewsActivity || this instanceof PhotoActivity) {
+        if (this instanceof NewsActivity || this instanceof PhotoActivity|| this instanceof LikeNewsActivity) {
             MenuItem menuNightMode = mBaseNavView.getMenu().findItem(R.id.nav_night_mode);
             SwitchCompat dayNightSwitch = (SwitchCompat) MenuItemCompat
                     .getActionView(menuNightMode);
@@ -133,7 +134,7 @@ public abstract class BaseActivity<T extends BasePresenter> extends AppCompatAct
         }
     }
     private void initTextModeSwitch() {
-        if (this instanceof NewsActivity || this instanceof PhotoActivity) {
+        if (this instanceof NewsActivity || this instanceof PhotoActivity|| this instanceof LikeNewsActivity) {
             MenuItem menuTextMode = mBaseNavView.getMenu().findItem(R.id.nav_text_mode);
             SwitchCompat textSwitch = (SwitchCompat) MenuItemCompat
                     .getActionView(menuTextMode);
@@ -160,10 +161,8 @@ public abstract class BaseActivity<T extends BasePresenter> extends AppCompatAct
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
-                    //changeToText();
                     MyUtils.saveTextTheme(true);
                 } else {
-                   // changeTextBack();
                     MyUtils.saveTextTheme(false);
                 }
 
@@ -295,17 +294,11 @@ public abstract class BaseActivity<T extends BasePresenter> extends AppCompatAct
             tintManager.setStatusBarTintResource(R.color.colorPrimary);
         }
     }
-    public void changeTextBack(){
-
-    }
 
     public void changeToDay() {
 //        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
         getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         mNightView.setBackgroundResource(android.R.color.transparent);
-    }
-    public void changeToText(){
-
     }
     public void changeToNight() {
 //        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
