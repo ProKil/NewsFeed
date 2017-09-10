@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v18/values-v18.xml",
+        "outputFile": "D:\\Users\\Hao\\Documents\\Academic Learning\\2017Summer\\Java\\project\\NewsFeed\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v18\\values-v18.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,31 @@
                     "endOffset": 99
                 },
                 "from": {
-                    "file": "/Users/Hao/.android/build-cache/407de43b96a4b6bdb5c22e8d7004c72af61e8f21/output/res/values-v18/values-v18.xml",
+                    "file": "D:\\Users\\Hao\\.android\\build-cache\\407de43b96a4b6bdb5c22e8d7004c72af61e8f21\\output\\res\\values-v18\\values-v18.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 48,
+                        "endOffset": 99
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "D:\\NewsFeed\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v18\\values-v18.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 48,
+                    "endOffset": 99
+                },
+                "from": {
+                    "file": "C:\\Users\\Shinelon\\.android\\build-cache\\9ca0279ef17bf15174a8f47a536df520bca21336\\output\\res\\values-v18\\values-v18.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,

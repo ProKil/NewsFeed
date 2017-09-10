@@ -1,6 +1,10 @@
 [
     {
-        "merged": "/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/intermediates/res/merged/debug/drawable-hdpi-v11/leak_canary_notification.png",
-        "source": "/Users/Hao/.android/build-cache/3e1b1dcb922ddf8056b88344f6c07074767311cd/output/res/drawable-hdpi-v11/leak_canary_notification.png"
+        "merged": "D:\\Users\\Hao\\Documents\\Academic Learning\\2017Summer\\Java\\project\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v11\\leak_canary_notification.png",
+        "source": "D:\\Users\\Hao\\.android\\build-cache\\3e1b1dcb922ddf8056b88344f6c07074767311cd\\output\\res\\drawable-hdpi-v11\\leak_canary_notification.png"
+    },
+    {
+        "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v11\\leak_canary_notification.png",
+        "source": "C:\\Users\\Shinelon\\.android\\build-cache\\6041494504447f400111110c1ac876369fb13322\\output\\res\\drawable-hdpi-v11\\leak_canary_notification.png"
     }
 ]

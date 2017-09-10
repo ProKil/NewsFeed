@@ -1,54 +1,106 @@
 [
     {
-        "merged": "/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_menu_video.png",
-        "source": "/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/src/main/res/drawable-xxhdpi/ic_menu_video.png"
+        "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_launcher_inner.png",
+        "source": "D:\\NewsFeed\\app\\src\\main\\res\\drawable-xxhdpi\\ic_launcher_inner.png"
     },
     {
-        "merged": "/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_arrow_upward.png",
-        "source": "/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/src/main/res/drawable-xxhdpi/ic_arrow_upward.png"
+        "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_menu_news.png",
+        "source": "D:\\NewsFeed\\app\\src\\main\\res\\drawable-xxhdpi\\ic_menu_news.png"
     },
     {
-        "merged": "/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_add.png",
-        "source": "/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/src/main/res/drawable-xxhdpi/ic_add.png"
+        "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_share.png",
+        "source": "D:\\NewsFeed\\app\\src\\main\\res\\drawable-xxhdpi\\ic_share.png"
     },
     {
-        "merged": "/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_menu_news.png",
-        "source": "/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/src/main/res/drawable-xxhdpi/ic_menu_news.png"
+        "merged": "D:\\Users\\Hao\\Documents\\Academic Learning\\2017Summer\\Java\\project\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_news_empty.png",
+        "source": "D:\\Users\\Hao\\Documents\\Academic Learning\\2017Summer\\Java\\project\\NewsFeed\\app\\src\\main\\res\\drawable-xxhdpi\\ic_news_empty.png"
     },
     {
-        "merged": "/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_load_fail.9.png",
-        "source": "/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/src/main/res/drawable-xxhdpi/ic_load_fail.9.png"
+        "merged": "D:\\Users\\Hao\\Documents\\Academic Learning\\2017Summer\\Java\\project\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_launcher_inner.png",
+        "source": "D:\\Users\\Hao\\Documents\\Academic Learning\\2017Summer\\Java\\project\\NewsFeed\\app\\src\\main\\res\\drawable-xxhdpi\\ic_launcher_inner.png"
     },
     {
-        "merged": "/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_share.png",
-        "source": "/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/src/main/res/drawable-xxhdpi/ic_share.png"
+        "merged": "D:\\Users\\Hao\\Documents\\Academic Learning\\2017Summer\\Java\\project\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_menu_news.png",
+        "source": "D:\\Users\\Hao\\Documents\\Academic Learning\\2017Summer\\Java\\project\\NewsFeed\\app\\src\\main\\res\\drawable-xxhdpi\\ic_menu_news.png"
     },
     {
-        "merged": "/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_launcher_outer.png",
-        "source": "/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/src/main/res/drawable-xxhdpi/ic_launcher_outer.png"
+        "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_menu_video.png",
+        "source": "D:\\NewsFeed\\app\\src\\main\\res\\drawable-xxhdpi\\ic_menu_video.png"
     },
     {
-        "merged": "/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_photo_empty.png",
-        "source": "/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/src/main/res/drawable-xxhdpi/ic_photo_empty.png"
+        "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_photo_empty.png",
+        "source": "D:\\NewsFeed\\app\\src\\main\\res\\drawable-xxhdpi\\ic_photo_empty.png"
     },
     {
-        "merged": "/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_menu_photo.png",
-        "source": "/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/src/main/res/drawable-xxhdpi/ic_menu_photo.png"
+        "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_add.png",
+        "source": "D:\\NewsFeed\\app\\src\\main\\res\\drawable-xxhdpi\\ic_add.png"
     },
     {
-        "merged": "/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_news_empty.png",
-        "source": "/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/src/main/res/drawable-xxhdpi/ic_news_empty.png"
+        "merged": "D:\\Users\\Hao\\Documents\\Academic Learning\\2017Summer\\Java\\project\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_share.png",
+        "source": "D:\\Users\\Hao\\Documents\\Academic Learning\\2017Summer\\Java\\project\\NewsFeed\\app\\src\\main\\res\\drawable-xxhdpi\\ic_share.png"
     },
     {
-        "merged": "/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_arrow_back.png",
-        "source": "/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/src/main/res/drawable-xxhdpi/ic_arrow_back.png"
+        "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_menu_photo.png",
+        "source": "D:\\NewsFeed\\app\\src\\main\\res\\drawable-xxhdpi\\ic_menu_photo.png"
     },
     {
-        "merged": "/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_loading.9.png",
-        "source": "/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/src/main/res/drawable-xxhdpi/ic_loading.9.png"
+        "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_arrow_back.png",
+        "source": "D:\\NewsFeed\\app\\src\\main\\res\\drawable-xxhdpi\\ic_arrow_back.png"
     },
     {
-        "merged": "/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_launcher_inner.png",
-        "source": "/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/src/main/res/drawable-xxhdpi/ic_launcher_inner.png"
+        "merged": "D:\\Users\\Hao\\Documents\\Academic Learning\\2017Summer\\Java\\project\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_arrow_back.png",
+        "source": "D:\\Users\\Hao\\Documents\\Academic Learning\\2017Summer\\Java\\project\\NewsFeed\\app\\src\\main\\res\\drawable-xxhdpi\\ic_arrow_back.png"
+    },
+    {
+        "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_load_fail.9.png",
+        "source": "D:\\NewsFeed\\app\\src\\main\\res\\drawable-xxhdpi\\ic_load_fail.9.png"
+    },
+    {
+        "merged": "D:\\Users\\Hao\\Documents\\Academic Learning\\2017Summer\\Java\\project\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_menu_video.png",
+        "source": "D:\\Users\\Hao\\Documents\\Academic Learning\\2017Summer\\Java\\project\\NewsFeed\\app\\src\\main\\res\\drawable-xxhdpi\\ic_menu_video.png"
+    },
+    {
+        "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_loading.9.png",
+        "source": "D:\\NewsFeed\\app\\src\\main\\res\\drawable-xxhdpi\\ic_loading.9.png"
+    },
+    {
+        "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_news_empty.png",
+        "source": "D:\\NewsFeed\\app\\src\\main\\res\\drawable-xxhdpi\\ic_news_empty.png"
+    },
+    {
+        "merged": "D:\\Users\\Hao\\Documents\\Academic Learning\\2017Summer\\Java\\project\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_launcher_outer.png",
+        "source": "D:\\Users\\Hao\\Documents\\Academic Learning\\2017Summer\\Java\\project\\NewsFeed\\app\\src\\main\\res\\drawable-xxhdpi\\ic_launcher_outer.png"
+    },
+    {
+        "merged": "D:\\Users\\Hao\\Documents\\Academic Learning\\2017Summer\\Java\\project\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_menu_photo.png",
+        "source": "D:\\Users\\Hao\\Documents\\Academic Learning\\2017Summer\\Java\\project\\NewsFeed\\app\\src\\main\\res\\drawable-xxhdpi\\ic_menu_photo.png"
+    },
+    {
+        "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_launcher_outer.png",
+        "source": "D:\\NewsFeed\\app\\src\\main\\res\\drawable-xxhdpi\\ic_launcher_outer.png"
+    },
+    {
+        "merged": "D:\\Users\\Hao\\Documents\\Academic Learning\\2017Summer\\Java\\project\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_load_fail.9.png",
+        "source": "D:\\Users\\Hao\\Documents\\Academic Learning\\2017Summer\\Java\\project\\NewsFeed\\app\\src\\main\\res\\drawable-xxhdpi\\ic_load_fail.9.png"
+    },
+    {
+        "merged": "D:\\Users\\Hao\\Documents\\Academic Learning\\2017Summer\\Java\\project\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_loading.9.png",
+        "source": "D:\\Users\\Hao\\Documents\\Academic Learning\\2017Summer\\Java\\project\\NewsFeed\\app\\src\\main\\res\\drawable-xxhdpi\\ic_loading.9.png"
+    },
+    {
+        "merged": "D:\\Users\\Hao\\Documents\\Academic Learning\\2017Summer\\Java\\project\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_photo_empty.png",
+        "source": "D:\\Users\\Hao\\Documents\\Academic Learning\\2017Summer\\Java\\project\\NewsFeed\\app\\src\\main\\res\\drawable-xxhdpi\\ic_photo_empty.png"
+    },
+    {
+        "merged": "D:\\Users\\Hao\\Documents\\Academic Learning\\2017Summer\\Java\\project\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_arrow_upward.png",
+        "source": "D:\\Users\\Hao\\Documents\\Academic Learning\\2017Summer\\Java\\project\\NewsFeed\\app\\src\\main\\res\\drawable-xxhdpi\\ic_arrow_upward.png"
+    },
+    {
+        "merged": "D:\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_arrow_upward.png",
+        "source": "D:\\NewsFeed\\app\\src\\main\\res\\drawable-xxhdpi\\ic_arrow_upward.png"
+    },
+    {
+        "merged": "D:\\Users\\Hao\\Documents\\Academic Learning\\2017Summer\\Java\\project\\NewsFeed\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_add.png",
+        "source": "D:\\Users\\Hao\\Documents\\Academic Learning\\2017Summer\\Java\\project\\NewsFeed\\app\\src\\main\\res\\drawable-xxhdpi\\ic_add.png"
     }
 ]
