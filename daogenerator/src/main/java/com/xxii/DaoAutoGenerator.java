@@ -66,6 +66,6 @@ public class DaoAutoGenerator {
         entity.addBooleanProperty("newsChannelFixed");
         Entity news = schema.addEntity("News");
         news.addStringProperty("News_ID").notNull().primaryKey().index();
-        news.addStringProperty("");
+        //news.addStringProperty("");
     }
 }
