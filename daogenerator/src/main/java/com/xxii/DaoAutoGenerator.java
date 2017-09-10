@@ -64,5 +64,8 @@ public class DaoAutoGenerator {
          * 频道是否是固定的
          */
         entity.addBooleanProperty("newsChannelFixed");
+        Entity news = schema.addEntity("News");
+        news.addStringProperty("News_ID").notNull().primaryKey().index();
+        news.addStringProperty("");
     }
 }
