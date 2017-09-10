@@ -3,9 +3,16 @@
     <state version="4" enabled="true" />
     <globalmarks />
     <filemarks>
-      <file name="/a.dummy" timestamp="1504854419707">
+      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/mvp/ui/activities/NewsDetailActivity.java" timestamp="1505049219714">
+        <mark key="[" line="249" column="34" />
+        <mark key="]" line="242" column="36" />
+        <mark key="^" line="242" column="36" />
+        <mark key="." line="242" column="36" />
+      </file>
+      <file name="/a.dummy" timestamp="1505049125405">
         <mark key="[" line="0" column="0" />
       </file>
+      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/res/menu/news_detail.xml" timestamp="1505049123709" />
       <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/repository/network/NewsService.java" timestamp="1504843816315">
         <mark key="]" line="43" column="16" />
         <mark key="." line="43" column="16" />
