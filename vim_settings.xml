@@ -8,12 +8,14 @@
         <mark key="]" line="33" column="28" />
         <mark key="." line="33" column="28" />
       </file>
-      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/mvp/ui/activities/NewsDetailActivity.java" timestamp="1505057549706">
-        <mark key="'" line="300" column="20" />
-        <mark key="[" line="356" column="43" />
-        <mark key="]" line="356" column="32" />
-        <mark key="^" line="356" column="32" />
-        <mark key="." line="356" column="32" />
+      <file name="/RegExp Fragment (NewsDetailActivity.java:9976).regexp" timestamp="1505059210174">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/mvp/entity/NewsSummary.java" timestamp="1505060014212" />
+      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/mvp/ui/activities/NewsDetailActivity.java" timestamp="1505059660001">
+        <mark key="[" line="360" column="0" />
+        <mark key="]" line="360" column="0" />
+        <mark key="." line="360" column="0" />
       </file>
       <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/AndroidManifest.xml" timestamp="1505056107369">
         <mark key="[" line="52" column="0" />
@@ -24,7 +26,6 @@
       <file name="/a.dummy" timestamp="1505057716920">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/res/menu/news_detail.xml" timestamp="1505053857018" />
       <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/repository/network/NewsService.java" timestamp="1504843816315">
         <mark key="]" line="43" column="16" />
         <mark key="." line="43" column="16" />
@@ -38,18 +39,17 @@
       <file name="/fragment.java" timestamp="1505056436218">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/mvp/entity/NewsDetail.java" timestamp="1505057259852" />
     </filemarks>
     <jumps>
       <jump line="300" column="69" filename="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/mvp/ui/activities/NewsDetailActivity.java" />
       <jump line="297" column="20" filename="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/mvp/ui/activities/NewsDetailActivity.java" />
     </jumps>
     <registers>
-      <register name="&quot;" type="4">
-        <text>WebView</text>
+      <register name="&quot;" type="2">
+        <text encoding="base64">ICAgICAgICBteVN5bnRoZXNpemVyLnN0b3BTcGVha2luZygpOwo=</text>
       </register>
       <register name="-" type="4">
-        <text>WebView</text>
+        <text>\</text>
       </register>
       <register name="/" type="4">
         <text>startActivity</text>
@@ -58,31 +58,31 @@
         <text encoding="base64">ICAgIHByaXZhdGUgU3RyaW5nIG1TaGFyZUxpbms7Cg==</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">ICAgICAgICAqLwo=</text>
+        <text encoding="base64">ICAgICAgICBteVN5bnRoZXNpemVyLnN0b3BTcGVha2luZygpOwo=</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">ICAgICAgICAvKgo=</text>
-      </register>
-      <register name="3" type="2">
-        <text encoding="base64">ICAgICovCg==</text>
-      </register>
-      <register name="4" type="2">
-        <text encoding="base64">ICAgIC8qCg==</text>
-      </register>
-      <register name="5" type="2">
         <text encoding="base64">ICAgICAgICAqLwo=</text>
       </register>
-      <register name="6" type="2">
+      <register name="3" type="2">
         <text encoding="base64">ICAgICAgICAvKgo=</text>
       </register>
+      <register name="4" type="2">
+        <text encoding="base64">ICAgICovCg==</text>
+      </register>
+      <register name="5" type="2">
+        <text encoding="base64">ICAgIC8qCg==</text>
+      </register>
+      <register name="6" type="2">
+        <text encoding="base64">ICAgICAgICAqLwo=</text>
+      </register>
       <register name="7" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgYW5kcm9pZDpleHBvcnRlZD0idHJ1ZSIK</text>
+        <text encoding="base64">ICAgICAgICAvKgo=</text>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">ICAgIH0K</text>
+        <text encoding="base64">ICAgICAgICAgICAgYW5kcm9pZDpleHBvcnRlZD0idHJ1ZSIK</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICB9Cg==</text>
+        <text encoding="base64">ICAgIH0K</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
