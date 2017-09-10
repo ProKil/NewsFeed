@@ -132,7 +132,8 @@ public class NewsDetailActivity extends BaseActivity implements NewsDetailView {
         setToolBarLayout(mNewsTitle);
 //        mNewsDetailTitleTv.setText(newsTitle);
         mNewsDetailFromTv.setText(getString(R.string.news_from, newsSource, newsTime));
-        setNewsDetailPhotoIv(NewsImgSrc);
+        if(!MyUtils.isTextMode())
+            setNewsDetailPhotoIv(NewsImgSrc);
         setNewsDetailBodyTv(newsDetail, newsBody);
     }
 
@@ -182,7 +183,7 @@ public class NewsDetailActivity extends BaseActivity implements NewsDetailView {
 
     private void setBody(NewsDetail newsDetail, String newsBody) {
         int imgTotal = newsDetail.getNews_Pictures().length;
-        if (isShowBody(newsBody, imgTotal)) {
+        if (isShowBody(newsBody, imgTotal)&&!MyUtils.isTextMode()) {
 //              mNewsDetailBodyTv.setMovementMethod(LinkMovementMethod.getInstance());//加这句才能让里面的超链接生效,实测经常卡机崩溃
             mUrlImageGetter = new URLImageGetter(mNewsDetailBodyTv, newsBody, imgTotal);
             mNewsDetailBodyTv.setText(Html.fromHtml(newsBody, mUrlImageGetter, null));

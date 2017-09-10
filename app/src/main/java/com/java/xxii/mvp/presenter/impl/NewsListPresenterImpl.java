@@ -85,6 +85,8 @@ public class NewsListPresenterImpl extends BasePresenterImpl<NewsListView, List<
         if (mView != null) {
             mView.setNewsList(items, loadType);
             mView.hideProgress();
+            if(mView.getNewsListLength() < 20 && mStartPage < 20)
+                this.loadMore();
         }
 
     }

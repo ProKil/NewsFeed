@@ -11,10 +11,6 @@
             android:id="@+id/nav_photo"
             android:icon="@drawable/ic_menu_photo"
             android:title="@string/photo"/>
-        <item
-            android:id="@+id/nav_video"
-            android:icon="@drawable/ic_menu_video"
-            android:title="@string/video"/>
         <!--        <item
                     android:id="@+id/nav_about"
                     android:icon="@drawable/ic_arrow_back"
@@ -24,8 +20,13 @@
     <item android:title="@string/tools">
         <menu>
             <item
-                android:id="@+id/nav_night_mode"
-                android:title="@string/night_mode"
+            android:id="@+id/nav_night_mode"
+            android:title="@string/night_mode"
+            app:actionLayout="@layout/drawer_switch"
+            app:showAsAction="always"/>
+            <item
+                android:id="@+id/nav_text_mode"
+                android:title="@string/text_mode"
                 app:actionLayout="@layout/drawer_switch"
                 app:showAsAction="always"/>
         </menu>

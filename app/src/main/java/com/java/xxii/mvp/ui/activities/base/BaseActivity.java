@@ -112,6 +112,7 @@ public abstract class BaseActivity<T extends BasePresenter> extends AppCompatAct
         }
 
         initNightModeSwitch();
+        initTextModeSwitch();
     }
 
     private void initAnnotation() {
@@ -130,7 +131,22 @@ public abstract class BaseActivity<T extends BasePresenter> extends AppCompatAct
             setCheckedEvent(dayNightSwitch);
         }
     }
-
+    private void initTextModeSwitch() {
+        if (this instanceof NewsActivity || this instanceof PhotoActivity) {
+            MenuItem menuTextMode = mBaseNavView.getMenu().findItem(R.id.nav_text_mode);
+            SwitchCompat textSwitch = (SwitchCompat) MenuItemCompat
+                    .getActionView(menuTextMode);
+            setTextCheckedState(textSwitch);
+            setTextCheckedEvent(textSwitch);
+        }
+    }
+    private void setTextCheckedState(SwitchCompat textSwitch) {
+        if (MyUtils.isTextMode()) {
+            textSwitch.setChecked(true);
+        } else {
+            textSwitch.setChecked(false);
+        }
+    }
     private void setCheckedState(SwitchCompat dayNightSwitch) {
         if (MyUtils.isNightMode()) {
             dayNightSwitch.setChecked(true);
@@ -138,7 +154,23 @@ public abstract class BaseActivity<T extends BasePresenter> extends AppCompatAct
             dayNightSwitch.setChecked(false);
         }
     }
+    private void setTextCheckedEvent(SwitchCompat textSwitch) {
+        textSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    //changeToText();
+                    MyUtils.saveTextTheme(true);
+                } else {
+                   // changeTextBack();
+                    MyUtils.saveTextTheme(false);
+                }
 
+                mIsChangeTheme = true;
+                mDrawerLayout.closeDrawer(GravityCompat.START);
+            }
+        });
+    }
     private void setCheckedEvent(SwitchCompat dayNightSwitch) {
         dayNightSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -192,8 +224,7 @@ public abstract class BaseActivity<T extends BasePresenter> extends AppCompatAct
                         case R.id.nav_photo:
                             mClass = PhotoActivity.class;
                             break;
-                        case R.id.nav_video:
-                            Toast.makeText(BaseActivity.this, "施工准备中...", Toast.LENGTH_SHORT).show();
+                        case R.id.nav_text_mode:
                             break;
                         case R.id.nav_night_mode:
                             break;
@@ -260,13 +291,18 @@ public abstract class BaseActivity<T extends BasePresenter> extends AppCompatAct
             tintManager.setStatusBarTintResource(R.color.colorPrimary);
         }
     }
+    public void changeTextBack(){
+
+    }
 
     public void changeToDay() {
 //        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
         getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         mNightView.setBackgroundResource(android.R.color.transparent);
     }
+    public void changeToText(){
 
+    }
     public void changeToNight() {
 //        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_YES);
