@@ -22,6 +22,7 @@ import android.content.Context;
 import com.java.xxii.di.module.ActivityModule;
 import com.java.xxii.di.scope.ContextLife;
 import com.java.xxii.di.scope.PerActivity;
+import com.java.xxii.mvp.ui.activities.LikeNewsActivity;
 import com.java.xxii.mvp.ui.activities.NewsActivity;
 import com.java.xxii.mvp.ui.activities.NewsChannelActivity;
 import com.java.xxii.mvp.ui.activities.NewsDetailActivity;
@@ -58,4 +59,6 @@ public interface ActivityComponent {
     void inject(PhotoActivity photoActivity);
 
     void inject(PhotoDetailActivity photoDetailActivity);
+
+    void inject(LikeNewsActivity likeNewsActivity);
 }

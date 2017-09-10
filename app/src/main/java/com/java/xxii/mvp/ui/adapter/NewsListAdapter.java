@@ -106,9 +106,10 @@ public class NewsListAdapter extends BaseRecyclerViewAdapter<NewsSummary> {
                                 .build();
                         List<News> list = newsQuery.list();
                         boolean isRead = !list.isEmpty();
-                        if(!isRead)
+                        if(!isRead) {
                             newdao.insert(entity);
-                        ((ItemViewHolder) holder).mNewsSummaryTitleTv.setTextColor(Color.GRAY);
+                            ((ItemViewHolder) holder).mNewsSummaryTitleTv.setTextColor(Color.GRAY);
+                        }
                     }
                 }
             });
@@ -157,6 +158,8 @@ public class NewsListAdapter extends BaseRecyclerViewAdapter<NewsSummary> {
         holder.mNewsSummaryTitleTv.setText(title);
         if (isRead)
             holder.mNewsSummaryTitleTv.setTextColor(Color.GRAY);
+        else
+            holder.mNewsSummaryTitleTv.setTextColor(Color.BLACK);
         holder.mNewsSummaryPtimeTv.setText(ptime);
         holder.mNewsSummaryDigestTv.setText(digest);
         if (!MyUtils.isTextMode()){

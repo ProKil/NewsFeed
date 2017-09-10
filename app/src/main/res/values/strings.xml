@@ -9,6 +9,7 @@
 
     <!--menu-->
     <string name="news">新闻</string>
+    <string name="likes">收藏</string>
     <string name="zhihu">知乎</string>
     <string name="photo">图片</string>
     <string name="video">视频</string>
@@ -69,5 +70,6 @@
 
         \n\nEmail：java201313@163.com
     </string>
+    <string name="title_activity_like_news">LikeNewsActivity</string>
 
 </resources>

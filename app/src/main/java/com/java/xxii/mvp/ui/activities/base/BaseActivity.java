@@ -47,6 +47,7 @@ import com.java.xxii.di.module.ActivityModule;
 import com.java.xxii.mvp.presenter.base.BasePresenter;
 import com.java.xxii.mvp.ui.activities.AboutActivity;
 import com.java.xxii.mvp.ui.activities.NewsActivity;
+import com.java.xxii.mvp.ui.activities.LikeNewsActivity;
 import com.java.xxii.mvp.ui.activities.NewsDetailActivity;
 import com.java.xxii.mvp.ui.activities.PhotoActivity;
 import com.java.xxii.mvp.ui.activities.PhotoDetailActivity;
@@ -220,6 +221,9 @@ public abstract class BaseActivity<T extends BasePresenter> extends AppCompatAct
                     switch (item.getItemId()) {
                         case R.id.nav_news:
                             mClass = NewsActivity.class;
+                            break;
+                        case R.id.nav_like:
+                            mClass = LikeNewsActivity.class;
                             break;
                         case R.id.nav_photo:
                             mClass = PhotoActivity.class;

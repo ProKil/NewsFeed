@@ -161,6 +161,18 @@ public class NewsDetail {
 
         return news_Pictures.split(";| ");
     }
+    public String getNews_onePicture(){
+        try {
+            if (news_Pictures != "")
+                return news_Pictures.split(" |;")[0];
+            else
+                return "http://res2.esf.leju.com/esf_www/statics/images/default-img/detail.png";
+        }
+        catch (Exception e){
+            return "http://res2.esf.leju.com/esf_www/statics/images/default-img/detail.png";
+        }
+    }
+
 
     public void setNews_Pictures(String news_Pictures) {
         this.news_Pictures = news_Pictures;

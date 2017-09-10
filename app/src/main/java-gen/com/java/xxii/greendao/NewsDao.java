@@ -24,6 +24,7 @@ public class NewsDao extends AbstractDao<News, String> {
     */
     public static class Properties {
         public final static Property News_ID = new Property(0, String.class, "News_ID", true, "NEWS__ID");
+        public final static Property Key_Words = new Property(1, String.class, "Key_Words", false, "KEY__WORDS");
     };
 
 
@@ -39,7 +40,8 @@ public class NewsDao extends AbstractDao<News, String> {
     public static void createTable(SQLiteDatabase db, boolean ifNotExists) {
         String constraint = ifNotExists? "IF NOT EXISTS ": "";
         db.execSQL("CREATE TABLE " + constraint + "'NEWS' (" + //
-                "'NEWS__ID' TEXT PRIMARY KEY NOT NULL );"); // 0: News_ID
+                "'NEWS__ID' TEXT PRIMARY KEY NOT NULL ," + // 0: News_ID
+                "'KEY__WORDS' TEXT);"); // 1: Key_Words
         // Add Indexes
         db.execSQL("CREATE INDEX " + constraint + "IDX_NEWS_NEWS__ID ON NEWS" +
                 " (NEWS__ID);");
@@ -56,6 +58,11 @@ public class NewsDao extends AbstractDao<News, String> {
     protected void bindValues(SQLiteStatement stmt, News entity) {
         stmt.clearBindings();
         stmt.bindString(1, entity.getNews_ID());
+ 
+        String Key_Words = entity.getKey_Words();
+        if (Key_Words != null) {
+            stmt.bindString(2, Key_Words);
+        }
     }
 
     /** @inheritdoc */
@@ -68,7 +75,8 @@ public class NewsDao extends AbstractDao<News, String> {
     @Override
     public News readEntity(Cursor cursor, int offset) {
         News entity = new News( //
-            cursor.getString(offset + 0) // News_ID
+            cursor.getString(offset + 0), // News_ID
+            cursor.isNull(offset + 1) ? null : cursor.getString(offset + 1) // Key_Words
         );
         return entity;
     }
@@ -77,6 +85,7 @@ public class NewsDao extends AbstractDao<News, String> {
     @Override
     public void readEntity(Cursor cursor, News entity, int offset) {
         entity.setNews_ID(cursor.getString(offset + 0));
+        entity.setKey_Words(cursor.isNull(offset + 1) ? null : cursor.getString(offset + 1));
      }
     
     /** @inheritdoc */
