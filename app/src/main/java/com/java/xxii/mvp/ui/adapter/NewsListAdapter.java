@@ -16,6 +16,7 @@
  */
 package com.java.xxii.mvp.ui.adapter;
 
+import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 import android.view.View;
@@ -29,11 +30,14 @@ import com.bumptech.glide.load.DecodeFormat;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.java.xxii.App;
 import com.java.xxii.R;
+import com.java.xxii.greendao.NewsDao;
 import com.java.xxii.listener.OnItemClickListener;
 import com.java.xxii.mvp.entity.NewsSummary;
 import com.java.xxii.mvp.ui.adapter.base.BaseRecyclerViewAdapter;
 import com.java.xxii.utils.DimenUtil;
 import com.java.xxii.utils.MyUtils;
+import com.java.xxii.greendao.News;
+
 
 import java.util.List;
 
@@ -41,6 +45,7 @@ import javax.inject.Inject;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import de.greenrobot.dao.query.Query;
 
 /**
  * @author 咖枯
@@ -91,6 +96,20 @@ public class NewsListAdapter extends BaseRecyclerViewAdapter<NewsSummary> {
                 @Override
                 public void onClick(View v) {
                     ((OnNewsListItemClickListener) mOnItemClickListener).onItemClick(v, holder.getLayoutPosition(), isPhoto);
+                    if (holder instanceof ItemViewHolder){
+                        NewsDao newdao = App.getNewsDao();
+                        int position = holder.getLayoutPosition();
+                        NewsSummary newsSummary = mList.get(position);
+                        News entity = new News(newsSummary.getNews_ID());
+                        Query<News> newsQuery = App.getNewsDao().queryBuilder()
+                                .where(NewsDao.Properties.News_ID.eq(newsSummary.getNews_ID()))
+                                .build();
+                        List<News> list = newsQuery.list();
+                        boolean isRead = !list.isEmpty();
+                        if(!isRead)
+                            newdao.insert(entity);
+                        ((ItemViewHolder) holder).mNewsSummaryTitleTv.setTextColor(Color.GRAY);
+                    }
                 }
             });
         }
@@ -129,8 +148,15 @@ public class NewsListAdapter extends BaseRecyclerViewAdapter<NewsSummary> {
         String ptime = newsSummary.getNews_Time();
         String digest = newsSummary.getNews_Intro();
         String imgSrc = newsSummary.getNews_Pictures();
-
+        String newsId = newsSummary.getNews_ID();
+        Query<News> newsQuery = App.getNewsDao().queryBuilder()
+                .where(NewsDao.Properties.News_ID.eq(newsId))
+                .build();
+        List<News> list = newsQuery.list();
+        boolean isRead = !list.isEmpty();
         holder.mNewsSummaryTitleTv.setText(title);
+        if (isRead)
+            holder.mNewsSummaryTitleTv.setTextColor(Color.GRAY);
         holder.mNewsSummaryPtimeTv.setText(ptime);
         holder.mNewsSummaryDigestTv.setText(digest);
         if (!MyUtils.isTextMode()){
