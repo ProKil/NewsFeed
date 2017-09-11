@@ -102,7 +102,8 @@ public class NewsDetailActivity extends BaseActivity implements NewsDetailView {
     private String mNewsTitle;
     private NewsDetail mNewsDetail;
     private String mShareLink;
-    private boolean mIsLiked = false;
+    private boolean mIsLiked ;
+    private MenuItem mLikeItem;
 
     @Override
     public int getLayoutId() {
@@ -125,6 +126,7 @@ public class NewsDetailActivity extends BaseActivity implements NewsDetailView {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
     }
 
     @SuppressWarnings("deprecation")
@@ -146,7 +148,7 @@ public class NewsDetailActivity extends BaseActivity implements NewsDetailView {
                 .build();
         List<LikeNews> list = newsQuery.list();
         mIsLiked = !list.isEmpty();
-
+        invalidateOptionsMenu();
 
         setToolBarLayout(mNewsTitle);
 //        mNewsDetailTitleTv.setText(newsTitle);
@@ -199,7 +201,6 @@ public class NewsDetailActivity extends BaseActivity implements NewsDetailView {
                     }
                 });
     }
-
     private void setBody(NewsDetail newsDetail, String newsBody) {
         int imgTotal = newsDetail.getNews_Pictures().length;
         if (isShowBody(newsBody, imgTotal)&&!MyUtils.isTextMode()) {
@@ -245,17 +246,21 @@ public class NewsDetailActivity extends BaseActivity implements NewsDetailView {
         }
     }
 
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        mLikeItem = menu.getItem(0);
+        if(mIsLiked){
+            mLikeItem.setIcon(R.drawable.ic_action_favorite);
+        }else {
+            mLikeItem.setIcon(R.drawable.ic_action_unfav);
+        }
+        return true;
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.news_detail, menu);
-        MenuItem likeItem = menu.getItem(0);
-        if(mIsLiked){
-            likeItem.setIcon(R.drawable.ic_action_favorite);
-        }else {
-            likeItem.setIcon(R.drawable.ic_action_unfav);
-        }
         return true;
     }
 
