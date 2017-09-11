@@ -809,7 +809,7 @@
     <string name="transition_photos">transition_animation_news_photos</string>
     <string name="version">v1.0</string>
     <string name="video">视频</string>
-    <string name="web_view">WebView</string>
+    <string name="web_view">语音播报</string>
     <string name="zhihu">知乎</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>

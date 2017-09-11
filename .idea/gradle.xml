@@ -7,9 +7,9 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/../../../Academic Learning/2017Summer/Java/project/NewsFeed" />
-            <option value="$PROJECT_DIR$/../../../Academic Learning/2017Summer/Java/project/NewsFeed/app" />
-            <option value="$PROJECT_DIR$/../../../Academic Learning/2017Summer/Java/project/NewsFeed/daogenerator" />
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/daogenerator" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
