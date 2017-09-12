@@ -27,6 +27,22 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.Toolbar;
+
+import com.iflytek.cloud.ErrorCode;
+import com.iflytek.cloud.InitListener;
+import com.iflytek.cloud.SpeechConstant;
+import com.iflytek.cloud.SpeechError;
+import com.iflytek.cloud.SpeechSynthesizer;
+import com.iflytek.cloud.SpeechUtility;
+import com.iflytek.cloud.SynthesizerListener;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.util.Log;
+import android.view.Menu;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -104,6 +120,8 @@ public class NewsDetailActivity extends BaseActivity implements NewsDetailView {
     private String mShareLink;
     private boolean mIsLiked ;
     private MenuItem mLikeItem;
+    private String mNewsContent;
+    private SpeechSynthesizer mySynthesizer;
 
     @Override
     public int getLayoutId() {
@@ -126,13 +144,23 @@ public class NewsDetailActivity extends BaseActivity implements NewsDetailView {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        SpeechUtility.createUtility(NewsDetailActivity.this, "appid=59b543da");
+        //处理语音合成关键类
+        mySynthesizer = SpeechSynthesizer.createSynthesizer(this, myInitListener);
 
     }
 
+    private InitListener myInitListener = new InitListener() {
+        @Override
+        public void onInit(int code) {
+            Log.d("mySynthesiezer:", "InitListener init() code = " + code);
+        }
+    };
     @SuppressWarnings("deprecation")
     @Override
     public void setNewsDetail(NewsDetail newsDetail) {
         mNewsDetail = newsDetail;
+        mNewsContent = newsDetail.getNews_Content();
         NewsDao dao = App.getNewsDao();
         News entity = new News(newsDetail.getNews_ID(), newsDetail.getKeywords().get(0).getWord());
         dao.update(entity);
@@ -296,12 +324,62 @@ public class NewsDetailActivity extends BaseActivity implements NewsDetailView {
     }
 
     private void openByWebView() {
+        //TODO: Audio
+
+
+        mySynthesizer.setParameter(SpeechConstant.VOICE_NAME,"xiaoyan");
+        //设置音调
+        mySynthesizer.setParameter(SpeechConstant.PITCH,"50");
+        //设置音量
+        mySynthesizer.setParameter(SpeechConstant.VOLUME,"50");
+
+        mNewsContent = mNewsContent.replaceAll("<[^<]*>","");
+
+        int code = mySynthesizer.startSpeaking(mNewsContent, mTtsListener);
+        Log.d("mySynthesiezer start code:", code + " ");
+        /*
+
         Intent intent = new Intent(this, NewsBrowserActivity.class);
         intent.putExtra(Constants.NEWS_LINK, mShareLink);
         intent.putExtra(Constants.NEWS_TITLE, mNewsTitle);
         startActivity(intent);
+        */
     }
+    private SynthesizerListener mTtsListener = new SynthesizerListener() {
+        @Override
+        public void onSpeakBegin() {
+        }
+        @Override
+        public void onSpeakPaused() {
+        }
+        @Override
+        public void onSpeakResumed() {
+        }
+        @Override
+        public void onBufferProgress(int percent, int beginPos, int endPos,
+                                     String info) {
+        }
+        @Override
+        public void onSpeakProgress(int percent, int beginPos, int endPos) {
+        }
 
+        @Override
+        public void onCompleted(SpeechError error) {
+            if(error!=null)
+            {
+                Log.d("mySynthesiezer complete code:", error.getErrorCode()+"");
+            }
+            else
+            {
+                Log.d("mySynthesiezer complete code:", "0");
+            }
+        }
+
+        public void onEvent(int arg0, int arg1, int arg2, Bundle arg3) {
+            // TODO Auto-generated method stub
+
+        }
+    };
     private void openByBrowser() {
         Intent intent = new Intent();
         intent.setAction("android.intent.action.VIEW");
@@ -319,6 +397,7 @@ public class NewsDetailActivity extends BaseActivity implements NewsDetailView {
     @Override
     protected void onDestroy() {
         cancelUrlImageGetterSubscription();
+        mySynthesizer.destroy();
         super.onDestroy();
 
     }
