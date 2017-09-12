@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+#Tue Sep 12 19:04:54 CST 2017
+base.0=D\:\\NewsFeed\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_5aa18165c8b79058660b9c7935cdd2938d9240b7
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=D\:\\NewsFeed\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_5ca8e683ac46b2e77c3129e1842446e69134747d\\classes.dex
+base.1=D\:\\NewsFeed\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_5ca8e683ac46b2e77c3129e1842446e69134747d
+file.0=D\:\\NewsFeed\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_5aa18165c8b79058660b9c7935cdd2938d9240b7\\classes.dex
+=======
 #Tue Sep 12 17:15:33 CST 2017
 base.0=/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_f5a515c5b4c6a40939383f7ed2266e30c28e4e1b
 renamed.1=classes2.dex
@@ -5,3 +14,4 @@ renamed.0=classes.dex
 file.1=/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_1faf7d96b5e882496875bf3480906208c09f0e68/classes.dex
 base.1=/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_1faf7d96b5e882496875bf3480906208c09f0e68
 file.0=/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_f5a515c5b4c6a40939383f7ed2266e30c28e4e1b/classes.dex
+>>>>>>> master
