@@ -89,7 +89,7 @@ public class NewsSummary {
                 return "http://res2.esf.leju.com/esf_www/statics/images/default-img/detail.png";
         }
         catch (Exception e){
-            return "http://upload.qianlong.com/2016/0912/1473661206139.jpg";
+            return "http://res2.esf.leju.com/esf_www/statics/images/default-img/detail.png";
         }
 //        TODO: ...
     }

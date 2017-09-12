@@ -35,6 +35,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.java.xxii.R;
 import com.java.xxii.common.Constants;
@@ -314,15 +315,6 @@ public class NewsListFragment extends BaseFragment implements NewsListView, News
                     .makeSceneTransitionAnimation(mActivity, newsSummaryPhotoIv, Constants.TRANSITION_ANIMATION_NEWS_PHOTOS);
             startActivity(intent, options.toBundle());
         } else {
-/*            ActivityOptionsCompat.makeCustomAnimation(this,
-                    R.anim.slide_bottom_in, R.anim.slide_bottom_out);
-            这个我感觉没什么用处，类似于
-            overridePendingTransition(R.anim.slide_bottom_in, android.R.anim.fade_out);*/
-
-/*            ActivityOptionsCompat.makeThumbnailScaleUpAnimation(source, thumbnail, startX, startY)
-            这个方法可以用于4.x上，是将一个小块的Bitmpat进行拉伸的动画。*/
-
-            //让新的Activity从一个小的范围扩大到全屏
             ActivityOptionsCompat options = ActivityOptionsCompat
                     .makeScaleUpAnimation(view, view.getWidth() / 2, view.getHeight() / 2, 0, 0);
             ActivityCompat.startActivity(mActivity, intent, options.toBundle());

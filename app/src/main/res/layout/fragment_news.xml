@@ -17,6 +17,12 @@
             android:background="@color/container_background"/>
     </android.support.v4.widget.SwipeRefreshLayout>
 
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
     <TextView
         android:id="@+id/empty_view"
         android:layout_width="match_parent"
@@ -29,11 +35,5 @@
         android:textColor="@color/secondary_text"
         android:textSize="@dimen/big_medium"
         android:visibility="gone"
-        tools:visibility="visible"/>
-
-    <ProgressBar
-        android:id="@+id/progress_bar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"/>
+        tools:visibility="visible" />
 </FrameLayout>

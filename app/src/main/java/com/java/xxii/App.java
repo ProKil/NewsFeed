@@ -30,7 +30,9 @@ import com.java.xxii.di.component.DaggerApplicationComponent;
 import com.java.xxii.di.module.ApplicationModule;
 import com.java.xxii.greendao.DaoMaster;
 import com.java.xxii.greendao.DaoSession;
+import com.java.xxii.greendao.LikeNewsDao;
 import com.java.xxii.greendao.NewsChannelTableDao;
+import com.java.xxii.greendao.NewsDao;
 import com.java.xxii.utils.MyUtils;
 import com.socks.library.KLog;
 import com.squareup.leakcanary.LeakCanary;
@@ -181,7 +183,12 @@ public class App extends Application {
     public static NewsChannelTableDao getNewsChannelTableDao() {
         return mDaoSession.getNewsChannelTableDao();
     }
-
+    public static NewsDao getNewsDao(){
+        return mDaoSession.getNewsDao();
+    }
+    public static LikeNewsDao getLikeNewsDao(){
+        return mDaoSession.getLikeNewsDao();
+    }
     public static boolean isHavePhoto() {
         return MyUtils.getSharedPreferences().getBoolean(Constants.SHOW_NEWS_PHOTO, true);
     }

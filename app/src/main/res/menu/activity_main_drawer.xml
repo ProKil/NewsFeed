@@ -8,6 +8,10 @@
             android:icon="@drawable/ic_menu_news"
             android:title="@string/news"/>
         <item
+            android:id="@+id/nav_like"
+            android:icon="@drawable/ic_menu_likes"
+            android:title="@string/likes"/>
+        <item
             android:id="@+id/nav_photo"
             android:icon="@drawable/ic_menu_photo"
             android:title="@string/photo"/>

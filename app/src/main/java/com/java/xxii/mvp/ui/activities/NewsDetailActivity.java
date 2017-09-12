@@ -16,6 +16,7 @@
  */
 package com.java.xxii.mvp.ui.activities;
 
+
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -33,6 +34,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.DecodeFormat;
@@ -42,6 +44,10 @@ import com.daimajia.androidanimations.library.YoYo;
 import com.java.xxii.App;
 import com.java.xxii.R;
 import com.java.xxii.common.Constants;
+import com.java.xxii.greendao.LikeNews;
+import com.java.xxii.greendao.LikeNewsDao;
+import com.java.xxii.greendao.News;
+import com.java.xxii.greendao.NewsDao;
 import com.java.xxii.mvp.entity.NewsDetail;
 import com.java.xxii.mvp.presenter.impl.NewsDetailPresenterImpl;
 import com.java.xxii.mvp.ui.activities.base.BaseActivity;
@@ -59,6 +65,7 @@ import javax.inject.Inject;
 
 import butterknife.BindView;
 import butterknife.OnClick;
+import de.greenrobot.dao.query.Query;
 import rx.Observable;
 import rx.Subscriber;
 
@@ -93,7 +100,9 @@ public class NewsDetailActivity extends BaseActivity implements NewsDetailView {
 
     private URLImageGetter mUrlImageGetter;
     private String mNewsTitle;
+    private NewsDetail mNewsDetail;
     private String mShareLink;
+    private boolean mIsLiked = false;
 
     @Override
     public int getLayoutId() {
@@ -121,12 +130,22 @@ public class NewsDetailActivity extends BaseActivity implements NewsDetailView {
     @SuppressWarnings("deprecation")
     @Override
     public void setNewsDetail(NewsDetail newsDetail) {
+        mNewsDetail = newsDetail;
+        NewsDao dao = App.getNewsDao();
+        News entity = new News(newsDetail.getNews_ID(), newsDetail.getKeywords().get(0).getWord());
+        dao.update(entity);
         mShareLink = newsDetail.getNews_URL();
         mNewsTitle = newsDetail.getNews_Title();
         String newsSource = newsDetail.getNews_Source();
         String newsTime = MyUtils.formatDate(newsDetail.getNews_Time());
         String newsBody = newsDetail.getNews_Content();
         String NewsImgSrc = getImgSrcs(newsDetail);
+        String newsId = newsDetail.getNews_ID();
+        Query<LikeNews> newsQuery = App.getLikeNewsDao().queryBuilder()
+                .where(LikeNewsDao.Properties.News_Id.eq(newsId))
+                .build();
+        List<LikeNews> list = newsQuery.list();
+        mIsLiked = !list.isEmpty();
 
 
         setToolBarLayout(mNewsTitle);
@@ -231,6 +250,12 @@ public class NewsDetailActivity extends BaseActivity implements NewsDetailView {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.news_detail, menu);
+        MenuItem likeItem = menu.getItem(0);
+        if(mIsLiked){
+            likeItem.setIcon(R.drawable.ic_action_favorite);
+        }else {
+            likeItem.setIcon(R.drawable.ic_action_unfav);
+        }
         return true;
     }
 
@@ -239,6 +264,24 @@ public class NewsDetailActivity extends BaseActivity implements NewsDetailView {
         switch (item.getItemId()) {
             case R.id.action_filter:
 
+            case R.id.action_likes:
+                LikeNewsDao dao = App.getLikeNewsDao();
+                if(mIsLiked){
+                    Toast.makeText(getApplicationContext(), "已取消收藏",Toast.LENGTH_SHORT).show();
+                    item.setIcon(R.drawable.ic_action_unfav);
+                    mIsLiked = false;
+                    dao.deleteByKey(mNewsDetail.getNews_ID());
+                }else {
+                    Toast.makeText(getApplicationContext(), "已收藏", Toast.LENGTH_SHORT).show();
+                    item.setIcon(R.drawable.ic_action_favorite);
+                    mIsLiked = true;
+                    long time=System.currentTimeMillis();
+                    String intro = mNewsDetail.getNews_Content();
+                    intro = intro.replaceAll("<[^<]*>", "").substring(0,40);
+                    LikeNews entity = new LikeNews(mNewsDetail.getNews_ID(), mNewsDetail.getNews_Title(), mNewsDetail.getNews_Time(), mNewsDetail.getNews_onePicture(),intro, time);
+                    dao.insert(entity);
+                }
+                break;
             case R.id.action_web_view:
                 openByWebView();
                 break;

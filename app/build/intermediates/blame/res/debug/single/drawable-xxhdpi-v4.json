@@ -52,12 +52,12 @@
         "source": "/Users/Hao/.android/build-cache/407de43b96a4b6bdb5c22e8d7004c72af61e8f21/output/res/drawable-xxhdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/abc_list_focused_holo.9.png",
-        "source": "/Users/Hao/.android/build-cache/407de43b96a4b6bdb5c22e8d7004c72af61e8f21/output/res/drawable-xxhdpi-v4/abc_list_focused_holo.9.png"
-    },
-    {
         "merged": "/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/abc_btn_rating_star_on_mtrl_alpha.png",
         "source": "/Users/Hao/.android/build-cache/407de43b96a4b6bdb5c22e8d7004c72af61e8f21/output/res/drawable-xxhdpi-v4/abc_btn_rating_star_on_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/abc_list_focused_holo.9.png",
+        "source": "/Users/Hao/.android/build-cache/407de43b96a4b6bdb5c22e8d7004c72af61e8f21/output/res/drawable-xxhdpi-v4/abc_list_focused_holo.9.png"
     },
     {
         "merged": "/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png",
