@@ -10,14 +10,14 @@ import de.greenrobot.dao.identityscope.IdentityScopeType;
 import de.greenrobot.dao.internal.DaoConfig;
 
 import com.java.xxii.greendao.NewsChannelTable;
-import com.java.xxii.greendao.BanCollection;
 import com.java.xxii.greendao.BanNews;
+import com.java.xxii.greendao.BanKeyword;
 import com.java.xxii.greendao.News;
 import com.java.xxii.greendao.LikeNews;
 
 import com.java.xxii.greendao.NewsChannelTableDao;
-import com.java.xxii.greendao.BanCollectionDao;
 import com.java.xxii.greendao.BanNewsDao;
+import com.java.xxii.greendao.BanKeywordDao;
 import com.java.xxii.greendao.NewsDao;
 import com.java.xxii.greendao.LikeNewsDao;
 
@@ -31,14 +31,14 @@ import com.java.xxii.greendao.LikeNewsDao;
 public class DaoSession extends AbstractDaoSession {
 
     private final DaoConfig newsChannelTableDaoConfig;
-    private final DaoConfig banCollectionDaoConfig;
     private final DaoConfig banNewsDaoConfig;
+    private final DaoConfig banKeywordDaoConfig;
     private final DaoConfig newsDaoConfig;
     private final DaoConfig likeNewsDaoConfig;
 
     private final NewsChannelTableDao newsChannelTableDao;
-    private final BanCollectionDao banCollectionDao;
     private final BanNewsDao banNewsDao;
+    private final BanKeywordDao banKeywordDao;
     private final NewsDao newsDao;
     private final LikeNewsDao likeNewsDao;
 
@@ -49,11 +49,11 @@ public class DaoSession extends AbstractDaoSession {
         newsChannelTableDaoConfig = daoConfigMap.get(NewsChannelTableDao.class).clone();
         newsChannelTableDaoConfig.initIdentityScope(type);
 
-        banCollectionDaoConfig = daoConfigMap.get(BanCollectionDao.class).clone();
-        banCollectionDaoConfig.initIdentityScope(type);
-
         banNewsDaoConfig = daoConfigMap.get(BanNewsDao.class).clone();
         banNewsDaoConfig.initIdentityScope(type);
+
+        banKeywordDaoConfig = daoConfigMap.get(BanKeywordDao.class).clone();
+        banKeywordDaoConfig.initIdentityScope(type);
 
         newsDaoConfig = daoConfigMap.get(NewsDao.class).clone();
         newsDaoConfig.initIdentityScope(type);
@@ -62,22 +62,22 @@ public class DaoSession extends AbstractDaoSession {
         likeNewsDaoConfig.initIdentityScope(type);
 
         newsChannelTableDao = new NewsChannelTableDao(newsChannelTableDaoConfig, this);
-        banCollectionDao = new BanCollectionDao(banCollectionDaoConfig, this);
         banNewsDao = new BanNewsDao(banNewsDaoConfig, this);
+        banKeywordDao = new BanKeywordDao(banKeywordDaoConfig, this);
         newsDao = new NewsDao(newsDaoConfig, this);
         likeNewsDao = new LikeNewsDao(likeNewsDaoConfig, this);
 
         registerDao(NewsChannelTable.class, newsChannelTableDao);
-        registerDao(BanCollection.class, banCollectionDao);
         registerDao(BanNews.class, banNewsDao);
+        registerDao(BanKeyword.class, banKeywordDao);
         registerDao(News.class, newsDao);
         registerDao(LikeNews.class, likeNewsDao);
     }
     
     public void clear() {
         newsChannelTableDaoConfig.getIdentityScope().clear();
-        banCollectionDaoConfig.getIdentityScope().clear();
         banNewsDaoConfig.getIdentityScope().clear();
+        banKeywordDaoConfig.getIdentityScope().clear();
         newsDaoConfig.getIdentityScope().clear();
         likeNewsDaoConfig.getIdentityScope().clear();
     }
@@ -86,12 +86,12 @@ public class DaoSession extends AbstractDaoSession {
         return newsChannelTableDao;
     }
 
-    public BanCollectionDao getBanCollectionDao() {
-        return banCollectionDao;
-    }
-
     public BanNewsDao getBanNewsDao() {
         return banNewsDao;
+    }
+
+    public BanKeywordDao getBanKeywordDao() {
+        return banKeywordDao;
     }
 
     public NewsDao getNewsDao() {

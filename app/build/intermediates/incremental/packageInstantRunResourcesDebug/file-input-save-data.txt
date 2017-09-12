@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Sep 12 10:45:17 CST 2017
+#Tue Sep 12 15:49:40 CST 2017
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
 180.file=/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/abc_textfield_default_mtrl_alpha.9.png

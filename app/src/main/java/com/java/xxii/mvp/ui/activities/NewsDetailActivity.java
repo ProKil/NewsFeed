@@ -17,6 +17,9 @@
 package com.java.xxii.mvp.ui.activities;
 
 
+import android.app.DialogFragment;
+import android.app.Fragment;
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -25,6 +28,7 @@ import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.app.FragmentManager;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.Toolbar;
 import android.text.Html;
@@ -44,6 +48,8 @@ import com.daimajia.androidanimations.library.YoYo;
 import com.java.xxii.App;
 import com.java.xxii.R;
 import com.java.xxii.common.Constants;
+import com.java.xxii.greendao.BanNews;
+import com.java.xxii.greendao.BanNewsDao;
 import com.java.xxii.greendao.LikeNews;
 import com.java.xxii.greendao.LikeNewsDao;
 import com.java.xxii.greendao.News;
@@ -51,6 +57,7 @@ import com.java.xxii.greendao.NewsDao;
 import com.java.xxii.mvp.entity.NewsDetail;
 import com.java.xxii.mvp.presenter.impl.NewsDetailPresenterImpl;
 import com.java.xxii.mvp.ui.activities.base.BaseActivity;
+import com.java.xxii.mvp.ui.fragment.BanKeywordFragment;
 import com.java.xxii.mvp.view.NewsDetailView;
 import com.java.xxii.utils.MyUtils;
 import com.java.xxii.utils.NetUtil;
@@ -58,6 +65,7 @@ import com.java.xxii.utils.TransformUtils;
 import com.java.xxii.widget.URLImageGetter;
 import com.socks.library.KLog;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -103,6 +111,7 @@ public class NewsDetailActivity extends BaseActivity implements NewsDetailView {
     private NewsDetail mNewsDetail;
     private String mShareLink;
     private boolean mIsLiked = false;
+    private int mStackLevel = 0;
 
     @Override
     public int getLayoutId() {
@@ -263,7 +272,11 @@ public class NewsDetailActivity extends BaseActivity implements NewsDetailView {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_filter:
-
+                BanNewsDao banNewsDao = App.getBanNewsDao();
+                if(banNewsDao.queryBuilder().where(BanNewsDao.Properties.News_ID.eq(mNewsDetail.getNews_ID())).list().size() == 0)
+                    banNewsDao.insert(new BanNews(mNewsDetail.getNews_ID()));
+                showDialog();
+                break;
             case R.id.action_likes:
                 LikeNewsDao dao = App.getLikeNewsDao();
                 if(mIsLiked){
@@ -351,5 +364,26 @@ public class NewsDetailActivity extends BaseActivity implements NewsDetailView {
             mShareLink = "";
         }
         return getString(R.string.share_contents, mNewsTitle, mShareLink);
+    }
+
+    public void showDialog(){
+        FragmentManager fm = getFragmentManager();
+        Bundle bundle = new Bundle();
+        List<NewsDetail.KeywordsBean> keywordsBeanList = mNewsDetail.getKeywords();
+        ArrayList<String> tmp = new ArrayList<String>();
+        for (NewsDetail.KeywordsBean i: keywordsBeanList){
+            if(mNewsDetail.getNews_Title().contains(i.getWord()))
+                tmp.add(i.getWord());
+        }
+        String[] passIn = new String[tmp.size()];
+        if(passIn.length == 0){
+            return;
+        }
+        for (int i = 0;i<passIn.length;i++)
+            passIn[i] = tmp.get(i);
+        bundle.putStringArray("KeywordList", passIn);
+        BanKeywordFragment banKeywordFragment = new BanKeywordFragment();
+        banKeywordFragment.setArguments(bundle);
+        banKeywordFragment.show(fm, "");
     }
 }

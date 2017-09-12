@@ -46,13 +46,10 @@ public class DaoAutoGenerator {
          * 频道是否是固定的
          */
         entity.addBooleanProperty("newsChannelFixed");
-        Entity banCollection = schema.addEntity("BanCollection");
-        banCollection.addIdProperty();
         Entity banNews = schema.addEntity("BanNews");
-        banNews.addIdProperty();
-        Property newsFromCollection = banNews.addLongProperty("banCollection_id").notNull().getProperty();
-        banNews.addToOne(banCollection, newsFromCollection);
-        banCollection.addToMany(banNews, newsFromCollection);
+        banNews.addStringProperty("News_ID").notNull().primaryKey().index();
+        Entity banKeyword = schema.addEntity("BanKeyword");
+        banKeyword.addStringProperty("Keyword").notNull().primaryKey().index();
         Entity news = schema.addEntity("News");
         news.addStringProperty("News_ID").notNull().primaryKey().index();
         news.addStringProperty("Key_Words");

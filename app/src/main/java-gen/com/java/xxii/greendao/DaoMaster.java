@@ -9,8 +9,8 @@ import de.greenrobot.dao.AbstractDaoMaster;
 import de.greenrobot.dao.identityscope.IdentityScopeType;
 
 import com.java.xxii.greendao.NewsChannelTableDao;
-import com.java.xxii.greendao.BanCollectionDao;
 import com.java.xxii.greendao.BanNewsDao;
+import com.java.xxii.greendao.BanKeywordDao;
 import com.java.xxii.greendao.NewsDao;
 import com.java.xxii.greendao.LikeNewsDao;
 
@@ -24,8 +24,8 @@ public class DaoMaster extends AbstractDaoMaster {
     /** Creates underlying database table using DAOs. */
     public static void createAllTables(SQLiteDatabase db, boolean ifNotExists) {
         NewsChannelTableDao.createTable(db, ifNotExists);
-        BanCollectionDao.createTable(db, ifNotExists);
         BanNewsDao.createTable(db, ifNotExists);
+        BanKeywordDao.createTable(db, ifNotExists);
         NewsDao.createTable(db, ifNotExists);
         LikeNewsDao.createTable(db, ifNotExists);
     }
@@ -33,8 +33,8 @@ public class DaoMaster extends AbstractDaoMaster {
     /** Drops underlying database table using DAOs. */
     public static void dropAllTables(SQLiteDatabase db, boolean ifExists) {
         NewsChannelTableDao.dropTable(db, ifExists);
-        BanCollectionDao.dropTable(db, ifExists);
         BanNewsDao.dropTable(db, ifExists);
+        BanKeywordDao.dropTable(db, ifExists);
         NewsDao.dropTable(db, ifExists);
         LikeNewsDao.dropTable(db, ifExists);
     }
@@ -69,8 +69,8 @@ public class DaoMaster extends AbstractDaoMaster {
     public DaoMaster(SQLiteDatabase db) {
         super(db, SCHEMA_VERSION);
         registerDaoClass(NewsChannelTableDao.class);
-        registerDaoClass(BanCollectionDao.class);
         registerDaoClass(BanNewsDao.class);
+        registerDaoClass(BanKeywordDao.class);
         registerDaoClass(NewsDao.class);
         registerDaoClass(LikeNewsDao.class);
     }
