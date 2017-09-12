@@ -19,6 +19,7 @@ package com.java.xxii.mvp.interactor.impl;
 import com.java.xxii.common.ApiConstants;
 import com.java.xxii.common.HostType;
 import com.java.xxii.filter.KeywordFilter;
+import com.java.xxii.filter.RecommandationFilter;
 import com.java.xxii.listener.RequestCallBack;
 import com.java.xxii.mvp.entity.NewsSummary;
 import com.java.xxii.mvp.entity.NewsSummaryRetrieve;
@@ -101,7 +102,7 @@ public class NewsListInteractorImpl implements NewsListInteractor<List<NewsSumma
                     @Override
                     public void onNext(List<NewsSummary> newsSummaries) {
                         KLog.d();
-                        List<NewsSummary> filtered = new KeywordFilter().filterFrom(newsSummaries);
+                        List<NewsSummary> filtered = new RecommandationFilter().filterFrom(new KeywordFilter().filterFrom(newsSummaries));
                         listener.success(filtered);
                     }
                 });
