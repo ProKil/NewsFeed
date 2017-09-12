@@ -1,0 +1,94 @@
+<application>
+  <component name="VimSettings">
+    <state version="4" enabled="true" />
+    <globalmarks />
+    <filemarks>
+      <file name="/RegExp Fragment (NewsDetailActivity.java:9976).regexp" timestamp="1505059210174">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="/a.dummy" timestamp="1505057716920">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/repository/network/NewsService.java" timestamp="1504843816315">
+        <mark key="]" line="43" column="16" />
+        <mark key="." line="43" column="16" />
+        <mark key="^" line="43" column="16" />
+      </file>
+      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/build.gradle" timestamp="1505056696476">
+        <mark key="[" line="40" column="32" />
+        <mark key="]" line="43" column="0" />
+        <mark key="." line="43" column="0" />
+      </file>
+      <file name="/fragment.java" timestamp="1505056436218">
+        <mark key="[" line="0" column="0" />
+      </file>
+    </filemarks>
+    <jumps />
+    <registers>
+      <register name="&quot;" type="2">
+        <text encoding="base64">ICAgICAgICBteVN5bnRoZXNpemVyLnN0b3BTcGVha2luZygpOwo=</text>
+      </register>
+      <register name="-" type="4">
+        <text>\</text>
+      </register>
+      <register name="/" type="4">
+        <text>startActivity</text>
+      </register>
+      <register name="0" type="2">
+        <text encoding="base64">ICAgIHByaXZhdGUgU3RyaW5nIG1TaGFyZUxpbms7Cg==</text>
+      </register>
+      <register name="1" type="2">
+        <text encoding="base64">ICAgICAgICBteVN5bnRoZXNpemVyLnN0b3BTcGVha2luZygpOwo=</text>
+      </register>
+      <register name="2" type="2">
+        <text encoding="base64">ICAgICAgICAqLwo=</text>
+      </register>
+      <register name="3" type="2">
+        <text encoding="base64">ICAgICAgICAvKgo=</text>
+      </register>
+      <register name="4" type="2">
+        <text encoding="base64">ICAgICovCg==</text>
+      </register>
+      <register name="5" type="2">
+        <text encoding="base64">ICAgIC8qCg==</text>
+      </register>
+      <register name="6" type="2">
+        <text encoding="base64">ICAgICAgICAqLwo=</text>
+      </register>
+      <register name="7" type="2">
+        <text encoding="base64">ICAgICAgICAvKgo=</text>
+      </register>
+      <register name="8" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgYW5kcm9pZDpleHBvcnRlZD0idHJ1ZSIK</text>
+      </register>
+      <register name="9" type="2">
+        <text encoding="base64">ICAgIH0K</text>
+      </register>
+      <register name=":" type="4">
+        <text>w</text>
+      </register>
+    </registers>
+    <search>
+      <last-search>startActivity</last-search>
+      <last-offset />
+      <last-pattern>startActivity</last-pattern>
+      <last-dir>1</last-dir>
+      <show-last>false</show-last>
+    </search>
+    <history>
+      <history-search>
+        <entry>SynthesizerListener</entry>
+        <entry>startActivity</entry>
+      </history-search>
+      <history-cmd>
+        <entry>w</entry>
+      </history-cmd>
+      <history-expr />
+      <history-input />
+    </history>
+    <shortcut-conflicts />
+    <editor>
+      <key-repeat enabled="true" />
+    </editor>
+  </component>
+</application>
