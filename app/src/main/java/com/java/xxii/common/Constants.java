@@ -26,6 +26,7 @@ public class Constants {
     public static final String NIGHT_THEME_MODE = "night_theme_mode";
     public static final String TEXT_THEME_MODE = "text_theme_mode";
     public static final String INIT_DB = "init_db";
+    public static final String INIT_DB_BAN_NEWS = "init_db_ban_news";
 
     public static final String NEWS_ID = "news_id";
     public static final String NEWS_TYPE = "news_type";

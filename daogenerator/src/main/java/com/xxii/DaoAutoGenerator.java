@@ -2,6 +2,7 @@ package com.xxii;
 
 import de.greenrobot.daogenerator.DaoGenerator;
 import de.greenrobot.daogenerator.Entity;
+import de.greenrobot.daogenerator.Property;
 import de.greenrobot.daogenerator.Schema;
 
 public class DaoAutoGenerator {
@@ -64,8 +65,12 @@ public class DaoAutoGenerator {
          * 频道是否是固定的
          */
         entity.addBooleanProperty("newsChannelFixed");
-        Entity news = schema.addEntity("News");
-        news.addStringProperty("News_ID").notNull().primaryKey().index();
-        news.addStringProperty("");
+        Entity banCollection = schema.addEntity("BanCollection");
+        banCollection.addIdProperty();
+        Entity banNews = schema.addEntity("BanNews");
+        banNews.addIdProperty();
+        Property newsFromCollection = banNews.addLongProperty("banCollection_id").notNull().getProperty();
+        banNews.addToOne(banCollection, newsFromCollection);
+        banCollection.addToMany(banNews, newsFromCollection);
     }
 }

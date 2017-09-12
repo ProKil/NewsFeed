@@ -1,4 +1,4 @@
-#Sat Sep 09 15:22:36 CST 2017
+#Mon Sep 11 20:57:25 CST 2017
 base.0=/Users/Hao/Documents/Academic Learning/2017Summer/Java/project/NewsFeed/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_f5a515c5b4c6a40939383f7ed2266e30c28e4e1b
 renamed.1=classes2.dex
 renamed.0=classes.dex
