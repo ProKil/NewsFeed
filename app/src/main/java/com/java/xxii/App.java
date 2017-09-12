@@ -28,6 +28,9 @@ import com.java.xxii.common.Constants;
 import com.java.xxii.di.component.ApplicationComponent;
 import com.java.xxii.di.component.DaggerApplicationComponent;
 import com.java.xxii.di.module.ApplicationModule;
+import com.java.xxii.greendao.BanKeywordDao;
+import com.java.xxii.greendao.BanNews;
+import com.java.xxii.greendao.BanNewsDao;
 import com.java.xxii.greendao.DaoMaster;
 import com.java.xxii.greendao.DaoSession;
 import com.java.xxii.greendao.LikeNewsDao;
@@ -185,6 +188,12 @@ public class App extends Application {
     }
     public static NewsDao getNewsDao(){
         return mDaoSession.getNewsDao();
+    }
+    public static BanNewsDao getBanNewsDao(){
+        return mDaoSession.getBanNewsDao();
+    }
+    public static BanKeywordDao getBanKeywordDao(){
+        return mDaoSession.getBanKeywordDao();
     }
     public static LikeNewsDao getLikeNewsDao(){
         return mDaoSession.getLikeNewsDao();
