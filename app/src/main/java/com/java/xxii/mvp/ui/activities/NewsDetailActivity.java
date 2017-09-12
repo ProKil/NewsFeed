@@ -38,6 +38,7 @@ import com.iflytek.cloud.SynthesizerListener;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
@@ -238,6 +239,7 @@ public class NewsDetailActivity extends BaseActivity implements NewsDetailView {
         } else {
             mNewsDetailBodyTv.setText(Html.fromHtml(newsBody));
         }
+        mNewsDetailBodyTv.setMovementMethod(new LinkMovementMethod());
     }
 
     private boolean isShowBody(String newsBody, int imgTotal) {
