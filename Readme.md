@@ -13,7 +13,7 @@ As for IDE, we use Android Studio.
 - [x] News list and detail view when pressing a piece of news.
 - [x] Local Storage of news
 - [x] More news when scrolling to the top
-- [x] urning grey after viewed
+- [x] Turning grey after viewed
 - [ ] Searching
 - [ ] Share to wechat, weibo in detail view and shared info should contains summary, url and image
 - [x] Favorites collection
