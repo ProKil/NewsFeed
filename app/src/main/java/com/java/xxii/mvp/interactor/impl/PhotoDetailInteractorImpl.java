@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2016 咖枯 <java201313@163.com>
+
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -41,10 +41,7 @@ import rx.Subscriber;
 import rx.Subscription;
 import rx.functions.Func1;
 
-/**
- * @author 咖枯
- * @version 1.0 2016/8/12
- */
+
 public class PhotoDetailInteractorImpl implements PhotoDetailInteractor<Uri> {
 
     @Inject

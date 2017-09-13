@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2016 咖枯 <java201313@163.com>
+
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,10 +21,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-/**
- * @author 咖枯
- * @version 1.0 2016/9/4
- */
+
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
 public @interface BindValues {

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2016 咖枯 <java201313@163.com | 3772304@qq.com>
+
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,10 +25,7 @@ import com.java.xxii.di.scope.PerApp;
 import dagger.Module;
 import dagger.Provides;
 
-/**
- * @author 咖枯
- * @version 1.0 2016/6/21
- */
+
 
 @Module
 public class ApplicationModule {

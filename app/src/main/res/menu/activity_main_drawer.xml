@@ -11,11 +11,12 @@
             android:id="@+id/nav_like"
             android:icon="@drawable/ic_menu_likes"
             android:title="@string/likes"/>
+        <!--
         <item
             android:id="@+id/nav_photo"
             android:icon="@drawable/ic_menu_photo"
             android:title="@string/photo"/>
-        <!--        <item
+                <item
                     android:id="@+id/nav_about"
                     android:icon="@drawable/ic_arrow_back"
                     android:title="@string/about"/>-->

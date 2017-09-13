@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2016 咖枯 <java201313@163.com>
+
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -40,10 +40,7 @@ import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Action1;
 import rx.schedulers.Schedulers;
 
-/**
- * @author 咖枯
- * @version 1.0 2016/8/16
- */
+
 public class SplashActivity extends AppCompatActivity {
     @BindView(R.id.logo_outer_iv)
     ImageView mLogoOuterIv;

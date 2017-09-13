@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2016 咖枯 <java201313@163.com | 3772304@qq.com>
+
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -94,10 +94,7 @@ import de.greenrobot.dao.query.Query;
 import rx.Observable;
 import rx.Subscriber;
 
-/**
- * @author 咖枯
- * @version 1.0 2016/6/5
- */
+
 public class NewsDetailActivity extends BaseActivity implements NewsDetailView {
     @BindView(R.id.news_detail_photo_iv)
     ImageView mNewsDetailPhotoIv;
@@ -415,7 +412,18 @@ public class NewsDetailActivity extends BaseActivity implements NewsDetailView {
         cancelUrlImageGetterSubscription();
         mySynthesizer.destroy();
         super.onDestroy();
+    }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+        mySynthesizer.pauseSpeaking();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        mySynthesizer.resumeSpeaking();
     }
 
     private void cancelUrlImageGetterSubscription() {

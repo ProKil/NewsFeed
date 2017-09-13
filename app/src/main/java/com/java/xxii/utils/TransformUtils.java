@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2016 咖枯 <java201313@163.com>
+
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,10 +20,7 @@ import rx.Observable;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 
-/**
- * @author 咖枯
- * @version 1.0 2016/8/20
- */
+
 public class TransformUtils {
     public static <T> Observable.Transformer<T, T> defaultSchedulers() {
         return new Observable.Transformer<T, T>() {

@@ -7,7 +7,7 @@
         app:showAsAction="always"/>
     <item
         android:id="@+id/action_filter"
-        android:icon="@android:drawable/ic_menu_delete"
+        android:icon="@android:drawable/ic_delete"
         android:orderInCategory="104"
         android:title="Filter"
         app:showAsAction="always" />

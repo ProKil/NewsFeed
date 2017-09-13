@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2016 咖枯 <java201313@163.com | 3772304@qq.com>
+
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -61,10 +61,7 @@ import com.squareup.leakcanary.RefWatcher;
 import butterknife.ButterKnife;
 import rx.Subscription;
 
-/**
- * @author 咖枯
- * @version 1.0 2016/5/19
- */
+
 public abstract class BaseActivity<T extends BasePresenter> extends AppCompatActivity {
     protected ActivityComponent mActivityComponent;
     private boolean mIsChangeTheme;
@@ -224,9 +221,11 @@ public abstract class BaseActivity<T extends BasePresenter> extends AppCompatAct
                         case R.id.nav_like:
                             mClass = LikeNewsActivity.class;
                             break;
+                        /*
                         case R.id.nav_photo:
                             mClass = PhotoActivity.class;
                             break;
+                            */
                         case R.id.nav_text_mode:
                             break;
                         case R.id.nav_night_mode:
