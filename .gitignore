@@ -7,3 +7,5 @@
 /captures
 .externalNativeBuild
 .idea/modules.xml
+/app/build/outputs
+/app/build/intermediates
