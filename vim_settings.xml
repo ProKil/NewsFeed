@@ -3,33 +3,57 @@
     <state version="4" enabled="true" />
     <globalmarks />
     <filemarks>
+      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/repository/db/NewsChannelTableManager.java" timestamp="1505311724797" />
       <file name="/RegExp Fragment (NewsDetailActivity.java:9976).regexp" timestamp="1505059210174">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="/a.dummy" timestamp="1505057716920">
+      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/res/values/strings.xml" timestamp="1505311889360">
+        <mark key="[" line="62" column="0" />
+        <mark key="]" line="62" column="0" />
+        <mark key="." line="62" column="0" />
+        <mark key="^" line="62" column="16" />
+      </file>
+      <file name="/a.dummy" timestamp="1505311482776">
         <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/annotation/BindValues.java" timestamp="1505311518673" />
+      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/build.gradle" timestamp="1505056696476">
+        <mark key="[" line="40" column="32" />
+        <mark key="]" line="43" column="0" />
+        <mark key="." line="43" column="0" />
+      </file>
+      <file name="/a.regexp" timestamp="1505311899126">
+        <mark key="[" line="0" column="0" />
+        <mark key="]" line="0" column="2" />
+        <mark key="." line="0" column="2" />
+      </file>
+      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/App.java" timestamp="1505311794459" />
+      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/mvp/ui/activities/NewsActivity.java" timestamp="1505311819928">
+        <mark key="[" line="53" column="0" />
+        <mark key="]" line="53" column="0" />
+        <mark key="." line="53" column="0" />
       </file>
       <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/repository/network/NewsService.java" timestamp="1504843816315">
         <mark key="]" line="43" column="16" />
         <mark key="." line="43" column="16" />
         <mark key="^" line="43" column="16" />
       </file>
-      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/build.gradle" timestamp="1505056696476">
-        <mark key="[" line="40" column="32" />
-        <mark key="]" line="43" column="0" />
-        <mark key="." line="43" column="0" />
-      </file>
       <file name="/fragment.java" timestamp="1505056436218">
         <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/res/layout/nav_header_news.xml" timestamp="1505311922971">
+        <mark key="[" line="30" column="22" />
+        <mark key="]" line="30" column="22" />
+        <mark key="." line="30" column="22" />
       </file>
     </filemarks>
     <jumps />
     <registers>
-      <register name="&quot;" type="2">
-        <text encoding="base64">ICAgICAgICBteVN5bnRoZXNpemVyLnN0b3BTcGVha2luZygpOwo=</text>
+      <register name="&quot;" type="4">
+        <text>迷茫着、探索着、一路走来。。。</text>
       </register>
       <register name="-" type="4">
-        <text>\</text>
+        <text>迷茫着、探索着、一路走来。。。</text>
       </register>
       <register name="/" type="4">
         <text>startActivity</text>
@@ -38,31 +62,31 @@
         <text encoding="base64">ICAgIHByaXZhdGUgU3RyaW5nIG1TaGFyZUxpbms7Cg==</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">ICAgICAgICBteVN5bnRoZXNpemVyLnN0b3BTcGVha2luZygpOwo=</text>
+        <text encoding="base64">ICAgICAgICBhbmRyb2lkOnRleHQ9IuWSluaeryIK</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">ICAgICAgICAqLwo=</text>
+        <text encoding="base64">ICAgICAgICBcblxuRW1haWzvvJpqYXZhMjAxMzEzQDE2My5jb20K</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">ICAgICAgICAvKgo=</text>
+        <text encoding="base64">Cg==</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">ICAgICovCg==</text>
+        <text encoding="base64">ICAgICAgICBcblxuQ1NETu+8mmh0dHA6Ly9ibG9nLmNzZG4ubmV0L2phdmEyMDEzCg==</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">ICAgIC8qCg==</text>
+        <text encoding="base64">Cg==</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">ICAgICAgICAqLwo=</text>
+        <text encoding="base64">ICAgICAgICBcblxu566A5Lmm77yaaHR0cDovL3d3dy5qaWFuc2h1LmNvbS91c2Vycy9kYzY4ZTI2N2VhMWMvbGF0ZXN0X2FydGljbGVzCg==</text>
       </register>
       <register name="7" type="2">
-        <text encoding="base64">ICAgICAgICAvKgo=</text>
+        <text encoding="base64">Cg==</text>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgYW5kcm9pZDpleHBvcnRlZD0idHJ1ZSIK</text>
+        <text encoding="base64">ICAgICAgICBcblxuR2l0SHVi77yaaHR0cHM6Ly9naXRodWIuY29tL2phdmEyMDE1Cg==</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgIH0K</text>
+        <text encoding="base64">Cg==</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
