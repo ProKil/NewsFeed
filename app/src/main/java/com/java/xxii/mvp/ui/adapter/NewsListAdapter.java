@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2016 咖枯 <java201313@163.com | 3772304@qq.com>
+
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -47,10 +47,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import de.greenrobot.dao.query.Query;
 
-/**
- * @author 咖枯
- * @version 1.0 2016/5/19
- */
+
 public class NewsListAdapter extends BaseRecyclerViewAdapter<NewsSummary> {
 
     public static final int TYPE_PHOTO_ITEM = 2;
@@ -158,8 +155,8 @@ public class NewsListAdapter extends BaseRecyclerViewAdapter<NewsSummary> {
         holder.mNewsSummaryTitleTv.setText(title);
         if (isRead)
             holder.mNewsSummaryTitleTv.setTextColor(Color.GRAY);
-        else
-            holder.mNewsSummaryTitleTv.setTextColor(Color.BLACK);
+        //else
+        //    holder.mNewsSummaryTitleTv.setTextColor(Color.BLACK);
         holder.mNewsSummaryPtimeTv.setText(ptime);
         holder.mNewsSummaryDigestTv.setText(digest);
         if (!MyUtils.isTextMode()){

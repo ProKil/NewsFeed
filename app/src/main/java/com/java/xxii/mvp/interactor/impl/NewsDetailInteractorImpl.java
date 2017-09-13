@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2016 咖枯 <java201313@163.com | 3772304@qq.com>
+
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -34,10 +34,7 @@ import rx.Observer;
 import rx.Subscription;
 import rx.functions.Func1;
 
-/**
- * @author 咖枯
- * @version 1.0 2016/6/4
- */
+
 public class NewsDetailInteractorImpl implements NewsDetailInteractor<NewsDetail> {
 
     @Inject
@@ -77,6 +74,16 @@ public class NewsDetailInteractorImpl implements NewsDetailInteractor<NewsDetail
         String[] imgSrcs = newsDetail.getNews_Pictures();
         if (isChange(imgSrcs)&&!MyUtils.isTextMode())
             newsBody = changeNewsBody(imgSrcs, newsBody);
+        for (NewsDetail.KeywordsBean keyword : newsDetail.getKeywords()) {
+            if(keyword.getScore() >= 50)
+                newsBody = newsBody.replaceFirst(keyword.getWord(), String.format("<a href=http://www.baike.com/wiki/%s>%s</a>", keyword.getWord(), keyword.getWord()));
+        }
+        for (NewsDetail.PersonsBean person : newsDetail.getPersons()){
+            newsBody = newsBody.replaceFirst(person.getWord(), String.format("<a href=http://www.baike.com/wiki/%s>%s</a>", person.getWord(), person.getWord()));
+        }
+        for (NewsDetail.LocationsBean location : newsDetail.getLocations()){
+            newsBody = newsBody.replaceFirst(location.getWord(), String.format("<a href=http://www.baike.com/wiki/%s>%s</a>", location.getWord(), location.getWord()));
+        }
         newsDetail.setNews_Content(newsBody);
         return newsDetail;
     }

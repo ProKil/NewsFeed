@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2016 咖枯 <java201313@163.com>
+
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,10 +21,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.support.v7.widget.helper.ItemTouchHelper;
 
-/**
- * @author 咖枯
- * @version 1.0 2016/7/2
- */
+
 public class ItemDragHelperCallback extends ItemTouchHelper.Callback {
     private OnItemMoveListener mOnItemMoveListener;
     private boolean mIsLongPressEnabled;

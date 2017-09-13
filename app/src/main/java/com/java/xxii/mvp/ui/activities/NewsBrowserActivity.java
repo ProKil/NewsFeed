@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2016 咖枯 <java201313@163.com>
+
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -30,10 +30,7 @@ import com.java.xxii.mvp.ui.activities.base.BaseActivity;
 
 import butterknife.BindView;
 
-/**
- * @author 咖枯
- * @version 1.0 2016/7/28
- */
+
 public class NewsBrowserActivity extends BaseActivity {
     @BindView(R.id.toolbar)
     Toolbar mToolbar;

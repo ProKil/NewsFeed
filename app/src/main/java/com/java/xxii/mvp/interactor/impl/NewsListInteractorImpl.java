@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2016 咖枯 <java201313@163.com | 3772304@qq.com>
+
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,6 +19,7 @@ package com.java.xxii.mvp.interactor.impl;
 import com.java.xxii.common.ApiConstants;
 import com.java.xxii.common.HostType;
 import com.java.xxii.filter.KeywordFilter;
+import com.java.xxii.filter.RecommandationFilter;
 import com.java.xxii.listener.RequestCallBack;
 import com.java.xxii.mvp.entity.NewsSummary;
 import com.java.xxii.mvp.entity.NewsSummaryRetrieve;
@@ -39,10 +40,7 @@ import rx.Subscription;
 import rx.functions.Func1;
 import rx.functions.Func2;
 
-/**
- * @author 咖枯
- * @version 1.0 2016/5/19
- */
+
 public class NewsListInteractorImpl implements NewsListInteractor<List<NewsSummary>> {
 
 //    private boolean mIsNetError;
@@ -101,7 +99,7 @@ public class NewsListInteractorImpl implements NewsListInteractor<List<NewsSumma
                     @Override
                     public void onNext(List<NewsSummary> newsSummaries) {
                         KLog.d();
-                        List<NewsSummary> filtered = new KeywordFilter().filterFrom(newsSummaries);
+                        List<NewsSummary> filtered = new RecommandationFilter().filterFrom(new KeywordFilter().filterFrom(newsSummaries));
                         listener.success(filtered);
                     }
                 });

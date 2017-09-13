@@ -22,13 +22,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:text="咖枯"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>-->
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="迷茫着、探索着、一路走来。。。"/>
+        android:text="Java Android 新闻app大作业"/>
 
 </LinearLayout>

@@ -11,18 +11,18 @@ As for IDE, we use Android Studio.
 ## Features
 
 - [x] News list and detail view when pressing a piece of news.
-- [ ] Local Storage of news
+- [x] Local Storage of news
 - [x] More news when scrolling to the top
-- [ ] Turning grey after viewed
+- [x] Turning grey after viewed
 - [ ] Searching
 - [ ] Share to wechat, weibo in detail view and shared info should contains summary, url and image
-- [ ] Favorites collection
-- [ ] News recommendation
-- [ ] News to speech
-- [ ] Hyperlink to baike/encyclopedia
-- [ ] News filtering
+- [x] Favorites collection
+- [x] News recommendation
+- [x] News to speech
+- [x] Hyperlink to baike/encyclopedia
+- [x] News filtering
 - [x] Night mode
-- [ ] Word Mode and image mode
+- [x] Word Mode and image mode
 - [ ] Fluency
 - [x] UI Design
 - [ ] Image completion

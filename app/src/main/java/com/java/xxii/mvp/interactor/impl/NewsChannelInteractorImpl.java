@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2016 咖枯 <java201313@163.com>
+
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,10 +37,7 @@ import javax.inject.Inject;
 import rx.Subscriber;
 import rx.Subscription;
 
-/**
- * @author 咖枯
- * @version 1.0 2016/6/30
- */
+
 public class NewsChannelInteractorImpl implements NewsChannelInteractor<Map<Integer, List<NewsChannelTable>>> {
 
     private ExecutorService mSingleThreadPool;

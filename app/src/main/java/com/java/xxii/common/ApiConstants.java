@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2016 咖枯 <java201313@163.com | 3772304@qq.com>
+
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,10 +16,7 @@
  */
 package com.java.xxii.common;
 
-/**
- * @author 咖枯
- * @version 1.0 2016/5/25
- */
+
 public class ApiConstants {
     public static final String NETEAST_HOST = "http://166.111.68.66:2042/news/";
 

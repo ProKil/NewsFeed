@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2016 咖枯 <java201313@163.com | 3772304@qq.com>
+
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,10 +23,7 @@ import com.java.xxii.mvp.view.base.BaseView;
 
 import java.util.List;
 
-/**
- * @author 咖枯
- * @version 1.0 2016/5/19
- */
+
 public interface NewsListView extends BaseView {
 
     void setNewsList(List<NewsSummary> newsSummary, @LoadNewsType.checker int loadType);
