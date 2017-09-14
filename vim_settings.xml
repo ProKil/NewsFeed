@@ -18,6 +18,11 @@
         <mark key="]" line="13" column="46" />
         <mark key="." line="13" column="46" />
       </file>
+      <file name="/a.dummy" timestamp="1505380717121">
+        <mark key="[" line="0" column="0" />
+        <mark key="]" line="0" column="4" />
+        <mark key="." line="0" column="4" />
+      </file>
       <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/res/menu/activity_main_drawer.xml" timestamp="1505314061754">
         <mark key="[" line="13" column="8" />
         <mark key="]" line="13" column="12" />
@@ -29,7 +34,7 @@
         <mark key="]" line="43" column="0" />
         <mark key="." line="43" column="0" />
       </file>
-      <file name="/a.regexp" timestamp="1505379689483">
+      <file name="/a.regexp" timestamp="1505380442904">
         <mark key="[" line="0" column="0" />
         <mark key="]" line="0" column="2" />
         <mark key="." line="0" column="2" />
@@ -45,12 +50,15 @@
         <mark key="]" line="53" column="0" />
         <mark key="." line="53" column="0" />
       </file>
-      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/mvp/ui/activities/LikeNewsActivity.java" timestamp="1505379757654" />
+      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/mvp/ui/activities/LikeNewsActivity.java" timestamp="1505380442373" />
       <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/mvp/ui/activities/NewsDetailActivity.java" timestamp="1505379575657">
         <mark key="[" line="475" column="0" />
         <mark key="]" line="475" column="72" />
         <mark key="^" line="477" column="19" />
         <mark key="." line="475" column="0" />
+      </file>
+      <file name="/a.txt" timestamp="1505380455526">
+        <mark key="[" line="0" column="0" />
       </file>
       <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/mvp/ui/activities/base/BaseActivity.java" timestamp="1505314098921">
         <mark key="[" line="226" column="34" />
@@ -73,11 +81,11 @@
     </filemarks>
     <jumps />
     <registers>
-      <register name="&quot;" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIGludGVudC5wdXRFeHRyYSgiS2Rlc2NyaXB0aW9uIiwgInd3d3d3d3d3d3d3d3d3d3d3d3d3Iik7Cg==</text>
+      <register name="&quot;" type="4">
+        <text>mentdialog</text>
       </register>
       <register name="-" type="4">
-        <text>pauseSpeaking</text>
+        <text>mentdialog</text>
       </register>
       <register name="/" type="4">
         <text>startActivity</text>
