@@ -3,41 +3,6 @@
     <state version="4" enabled="true" />
     <globalmarks />
     <filemarks>
-      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/repository/db/NewsChannelTableManager.java" timestamp="1505311724797" />
-      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/res/values-night/colors.xml" timestamp="1505313924587">
-        <mark key="[" line="13" column="46" />
-        <mark key="]" line="13" column="46" />
-        <mark key="." line="13" column="46" />
-      </file>
-      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/annotation/BindValues.java" timestamp="1505311518673" />
-      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/App.java" timestamp="1505311794459" />
-      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/res/layout/activity_splash.xml" timestamp="1505312851224">
-        <mark key="[" line="5" column="49" />
-        <mark key="]" line="5" column="49" />
-        <mark key="." line="5" column="49" />
-      </file>
-      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/mvp/ui/activities/NewsActivity.java" timestamp="1505311819928">
-        <mark key="[" line="53" column="0" />
-        <mark key="]" line="53" column="0" />
-        <mark key="." line="53" column="0" />
-      </file>
-      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/mvp/ui/activities/base/BaseActivity.java" timestamp="1505314098921">
-        <mark key="[" line="226" column="34" />
-        <mark key="]" line="223" column="25" />
-        <mark key="^" line="223" column="25" />
-        <mark key="." line="223" column="25" />
-      </file>
-      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/res/layout/nav_header_news.xml" timestamp="1505311922971">
-        <mark key="[" line="30" column="22" />
-        <mark key="]" line="30" column="22" />
-        <mark key="." line="30" column="22" />
-      </file>
-      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/mvp/ui/adapter/NewsListAdapter.java" timestamp="1505313720744">
-        <mark key="[" line="157" column="8" />
-        <mark key="]" line="158" column="9" />
-        <mark key="." line="158" column="9" />
-        <mark key="^" line="158" column="9" />
-      </file>
       <file name="/Dummy.txt" timestamp="1505314301549">
         <mark key="[" line="0" column="0" />
       </file>
@@ -46,6 +11,11 @@
         <mark key="]" line="62" column="0" />
         <mark key="." line="62" column="0" />
         <mark key="^" line="62" column="16" />
+      </file>
+      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/res/values-night/colors.xml" timestamp="1505313924587">
+        <mark key="[" line="13" column="46" />
+        <mark key="]" line="13" column="46" />
+        <mark key="." line="13" column="46" />
       </file>
       <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/res/menu/activity_main_drawer.xml" timestamp="1505314061754">
         <mark key="[" line="13" column="8" />
@@ -58,16 +28,44 @@
         <mark key="]" line="43" column="0" />
         <mark key="." line="43" column="0" />
       </file>
-      <file name="/a.regexp" timestamp="1505314847443">
+      <file name="/a.regexp" timestamp="1505367557811">
         <mark key="[" line="0" column="0" />
         <mark key="]" line="0" column="2" />
         <mark key="." line="0" column="2" />
       </file>
-      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/mvp/ui/activities/NewsDetailActivity.java" timestamp="1505316032431">
+      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/res/layout/activity_splash.xml" timestamp="1505312851224">
+        <mark key="[" line="5" column="49" />
+        <mark key="]" line="5" column="49" />
+        <mark key="." line="5" column="49" />
+      </file>
+      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/mvp/ui/activities/NewsActivity.java" timestamp="1505311819928">
+        <mark key="[" line="53" column="0" />
+        <mark key="]" line="53" column="0" />
+        <mark key="." line="53" column="0" />
+      </file>
+      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/mvp/ui/activities/NewsDetailActivity.java" timestamp="1505367596868">
         <mark key="[" line="475" column="0" />
         <mark key="]" line="475" column="72" />
         <mark key="^" line="477" column="19" />
         <mark key="." line="475" column="0" />
+      </file>
+      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/mvp/ui/activities/base/BaseActivity.java" timestamp="1505314098921">
+        <mark key="[" line="226" column="34" />
+        <mark key="]" line="223" column="25" />
+        <mark key="^" line="223" column="25" />
+        <mark key="." line="223" column="25" />
+      </file>
+      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/repository/network/RetrofitManager.java" timestamp="1505367370021" />
+      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/res/layout/nav_header_news.xml" timestamp="1505311922971">
+        <mark key="[" line="30" column="22" />
+        <mark key="]" line="30" column="22" />
+        <mark key="." line="30" column="22" />
+      </file>
+      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/mvp/ui/adapter/NewsListAdapter.java" timestamp="1505313720744">
+        <mark key="[" line="157" column="8" />
+        <mark key="]" line="158" column="9" />
+        <mark key="." line="158" column="9" />
+        <mark key="^" line="158" column="9" />
       </file>
     </filemarks>
     <jumps />
