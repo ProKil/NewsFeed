@@ -3,6 +3,7 @@
     <state version="4" enabled="true" />
     <globalmarks />
     <filemarks>
+      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/repository/db/NewsChannelTableManager.java" timestamp="1505378885774" />
       <file name="/Dummy.txt" timestamp="1505314301549">
         <mark key="[" line="0" column="0" />
       </file>
@@ -28,11 +29,12 @@
         <mark key="]" line="43" column="0" />
         <mark key="." line="43" column="0" />
       </file>
-      <file name="/a.regexp" timestamp="1505367557811">
+      <file name="/a.regexp" timestamp="1505379689483">
         <mark key="[" line="0" column="0" />
         <mark key="]" line="0" column="2" />
         <mark key="." line="0" column="2" />
       </file>
+      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/filter/KeywordFilter.java" timestamp="1505379677072" />
       <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/res/layout/activity_splash.xml" timestamp="1505312851224">
         <mark key="[" line="5" column="49" />
         <mark key="]" line="5" column="49" />
@@ -43,7 +45,8 @@
         <mark key="]" line="53" column="0" />
         <mark key="." line="53" column="0" />
       </file>
-      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/mvp/ui/activities/NewsDetailActivity.java" timestamp="1505367596868">
+      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/mvp/ui/activities/LikeNewsActivity.java" timestamp="1505379757654" />
+      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/mvp/ui/activities/NewsDetailActivity.java" timestamp="1505379575657">
         <mark key="[" line="475" column="0" />
         <mark key="]" line="475" column="72" />
         <mark key="^" line="477" column="19" />
