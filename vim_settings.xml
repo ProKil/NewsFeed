@@ -19,7 +19,7 @@
         <mark key="]" line="13" column="46" />
         <mark key="." line="13" column="46" />
       </file>
-      <file name="/a.dummy" timestamp="1505382055719">
+      <file name="/a.dummy" timestamp="1505382665776">
         <mark key="[" line="0" column="0" />
         <mark key="]" line="0" column="4" />
         <mark key="." line="0" column="4" />
@@ -30,7 +30,7 @@
         <mark key="." line="13" column="8" />
         <mark key="^" line="13" column="7" />
       </file>
-      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/mvp/interactor/impl/NewsDetailInteractorImpl.java" timestamp="1505382087692" />
+      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/mvp/interactor/impl/NewsDetailInteractorImpl.java" timestamp="1505382664472" />
       <file name="$USER_HOME$/StudioProjects/NewsFeed/app/build.gradle" timestamp="1505056696476">
         <mark key="[" line="40" column="32" />
         <mark key="]" line="43" column="0" />
@@ -74,11 +74,11 @@
         <mark key="]" line="30" column="22" />
         <mark key="." line="30" column="22" />
       </file>
-      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/mvp/ui/adapter/NewsListAdapter.java" timestamp="1505313720744">
-        <mark key="[" line="157" column="8" />
-        <mark key="]" line="158" column="9" />
-        <mark key="." line="158" column="9" />
-        <mark key="^" line="158" column="9" />
+      <file name="$USER_HOME$/StudioProjects/NewsFeed/app/src/main/java/com/java/xxii/mvp/ui/adapter/NewsListAdapter.java" timestamp="1505382920469">
+        <mark key="[" line="71" column="40" />
+        <mark key="]" line="71" column="46" />
+        <mark key="." line="71" column="46" />
+        <mark key="^" line="71" column="46" />
       </file>
     </filemarks>
     <jumps />
