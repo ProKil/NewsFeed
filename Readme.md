@@ -15,7 +15,7 @@ As for IDE, we use Android Studio.
 - [x] More news when scrolling to the top
 - [x] Turning grey after viewed
 - [ ] Searching
-- [ ] Share to wechat, weibo in detail view and shared info should contains summary, url and image
+- [x] Share to wechat, weibo in detail view and shared info should contains summary, url and image
 - [x] Favorites collection
 - [x] News recommendation
 - [x] News to speech
@@ -23,7 +23,7 @@ As for IDE, we use Android Studio.
 - [x] News filtering
 - [x] Night mode
 - [x] Word Mode and image mode
-- [ ] Fluency
+- [x] Fluency
 - [x] UI Design
 - [ ] Image completion
 
